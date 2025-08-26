@@ -1,0 +1,6 @@
+---
+title: "My First Blog Post"
+format: html
+---
+
+This is a sample blog post!
