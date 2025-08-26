@@ -12,3 +12,5 @@ _site/
 # OS files
 .DS_Store
 Thumbs.db
+
+/.quarto/

@@ -1,5 +1,9 @@
 project:
   type: website
+  output-dir: _site
+
+execute:
+  freeze: auto
 
 website:
   title: "My Awesome Site"
