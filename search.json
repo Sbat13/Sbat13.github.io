@@ -7,6 +7,20 @@
     "text": "This is a sample blog post!"
   },
   {
+    "objectID": "book/chapter2.html",
+    "href": "book/chapter2.html",
+    "title": "My Awesome Site",
+    "section": "",
+    "text": "Chapter 2"
+  },
+  {
+    "objectID": "book/chapter1.html",
+    "href": "book/chapter1.html",
+    "title": "My Awesome Site",
+    "section": "",
+    "text": "Chapter 1"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Blogpost",
