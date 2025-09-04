@@ -1,0 +1,9 @@
+project:
+  type: book
+  output-dir: ../_site/book   # <- this ensures the book gets built into your site output
+book:
+  title: "My Book"
+  chapters:
+    - index.qmd
+    - chapter1.qmd
+    - chapter2.qmd
