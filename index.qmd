@@ -1,5 +1,5 @@
 ---
-title: "Sbat13.github.io"
+title: "Blogpost"
 ---
 
 ## Quarto
