@@ -1,12 +1,15 @@
 project:
   type: book
-  output-dir: ../_site/book   # <- this ensures the book gets built into your site output
+  output-dir: ../_site/book   # <- this ensures the book gets built into website output
+
 book:
   title: "My Book"
+  sidebar: true
+  search: true
   chapters:
-    - book/index.qmd
-    - book/chapter1.qmd
-    - book/chapter2.qmd
+    - index.qmd
+    - chapter1.qmd
+    - chapter2.qmd
 
 format:
   html:
