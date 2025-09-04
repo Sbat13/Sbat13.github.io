@@ -4,6 +4,12 @@ project:
 book:
   title: "My Book"
   chapters:
-    - index.qmd
-    - chapter1.qmd
-    - chapter2.qmd
+    - book/index.qmd
+    - book/chapter1.qmd
+    - book/chapter2.qmd
+
+format:
+  html:
+    theme: cosmo
+  pdf: 
+    documentclass: scrreprt 
