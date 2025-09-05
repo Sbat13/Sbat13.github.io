@@ -10,14 +10,18 @@ book:
   sidebar:
     collapsed-level: 3
     pinned: true
-  page-navigation: true
+  # page-navigation: true
+  # reader-mode: true
+  # sharing: [linkedin]
   page-footer:
     left: "Copyright 2025"
     right:
       - icon: github
         href: https://github.com/Sbat13
+        target: _blank
       - icon: linkedin
         href: https://www.linkedin.com/in/sfbatista/
+        target: _blank
       - icon: envelope-at-fill
         href: mailto:sbat13@yahoo.com
 
@@ -34,8 +38,9 @@ book:
 formats:
   html:
     theme: 
-      - cosmo
-      - custom.scss
+      light: cosmo
+      dark: darkly
+    toc: true
     callout-appearance: simple
 
   pdf: 
