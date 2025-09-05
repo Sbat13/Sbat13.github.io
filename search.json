@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "My First Blog Post",
-    "section": "",
-    "text": "This is a sample blog post!"
-  },
-  {
-    "objectID": "book/chapter2.html",
-    "href": "book/chapter2.html",
-    "title": "My Awesome Site",
-    "section": "",
-    "text": "Chapter 2"
-  },
-  {
-    "objectID": "book/chapter1.html",
-    "href": "book/chapter1.html",
-    "title": "My Awesome Site",
-    "section": "",
-    "text": "Chapter 1"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Blogpost",
@@ -33,5 +12,12 @@
     "title": "Blogpost",
     "section": "",
     "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "My First Blog Post",
+    "section": "",
+    "text": "This is a sample blog post!"
   }
 ]

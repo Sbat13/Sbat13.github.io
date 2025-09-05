@@ -1,0 +1,22 @@
+[
+  {
+    "objectID": "chapter1.html",
+    "href": "chapter1.html",
+    "title": "My Book",
+    "section": "",
+    "text": "Chapter 1",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>chapter1.html</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html",
+    "href": "chapter2.html",
+    "title": "My Book",
+    "section": "",
+    "text": "Chapter 2",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>chapter2.html</span>"
+    ]
+  }
+]
