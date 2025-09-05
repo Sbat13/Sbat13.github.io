@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  render: 
+    - "*.qmd"
+    - "!book/"
 
 execute:
   freeze: auto
@@ -15,10 +18,12 @@ website:
         text: About
       - href: blog.qmd
         text: Blog
-      - href: book/
+      - href: book/index.html
         text: Book
+        target: _blank
 
-format:
+formats:
   html:
     theme: cosmo
     css: styles.css
+

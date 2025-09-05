@@ -4,14 +4,12 @@ project:
 
 book:
   title: "My Book"
-  sidebar: true
-  search: true
   chapters:
     - index.qmd
     - chapter1.qmd
     - chapter2.qmd
 
-format:
+formats:
   html:
     theme: cosmo
   pdf: 
