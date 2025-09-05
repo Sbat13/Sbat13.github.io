@@ -4,13 +4,39 @@ project:
 
 book:
   title: "My Book"
+  subtitle: "Awesome findings"
+  # author: "Sérgio Baptista"
+  search: true
+  sidebar:
+    collapsed-level: 3
+    pinned: true
+  page-navigation: true
+  page-footer:
+    left: "Copyright 2025"
+    right:
+      - icon: github
+        href: https://github.com/Sbat13
+      - icon: linkedin
+        href: https://www.linkedin.com/in/sfbatista/
+      - icon: envelope-at-fill
+        href: mailto:sbat13@yahoo.com
+
   chapters:
     - index.qmd
-    - chapter1.qmd
-    - chapter2.qmd
+    - part: "Foundations"
+      chapters: 
+        - 01_chapter1.qmd
+        - 02_chapter2.qmd
+  appendices: 
+    - 100_awesome.qmd
+
 
 formats:
   html:
-    theme: cosmo
+    theme: 
+      - cosmo
+      - custom.scss
+    callout-appearance: simple
+
   pdf: 
-    documentclass: scrreprt 
+    documentclass: krantz
