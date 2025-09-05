@@ -1,22 +1,35 @@
 [
   {
-    "objectID": "chapter1.html",
-    "href": "chapter1.html",
+    "objectID": "01_chapter1.html",
+    "href": "01_chapter1.html",
     "title": "My Book",
     "section": "",
     "text": "Chapter 1",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>chapter1.html</span>"
+      "Foundations",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>01_chapter1.html</span>"
     ]
   },
   {
-    "objectID": "chapter2.html",
-    "href": "chapter2.html",
+    "objectID": "02_chapter2.html",
+    "href": "02_chapter2.html",
     "title": "My Book",
     "section": "",
     "text": "Chapter 2",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>chapter2.html</span>"
+      "Foundations",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>02_chapter2.html</span>"
+    ]
+  },
+  {
+    "objectID": "100_awesome.html",
+    "href": "100_awesome.html",
+    "title": "My Book",
+    "section": "",
+    "text": "🚀 The ultimate Awesome list",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>100_awesome.html</span>"
     ]
   }
 ]
