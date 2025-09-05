@@ -16,8 +16,15 @@
   {
     "objectID": "blog.html",
     "href": "blog.html",
-    "title": "My First Blog Post",
+    "title": "DC.js + Crossfilter Example",
     "section": "",
-    "text": "This is a sample blog post!"
+    "text": "This example shows how to build an interactive dashboard with dc.js and crossfilter.js right inside a Quarto page."
+  },
+  {
+    "objectID": "blog.html#interactive-dashboard",
+    "href": "blog.html#interactive-dashboard",
+    "title": "DC.js + Crossfilter Example",
+    "section": "",
+    "text": "This example shows how to build an interactive dashboard with dc.js and crossfilter.js right inside a Quarto page."
   }
 ]
