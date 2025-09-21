@@ -1,30 +1,90 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Blogpost",
+    "objectID": "recursos/index.html",
+    "href": "recursos/index.html",
+    "title": "Recursos úteis",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "text": "Compilação de links úteis, desde ferramentas online, páginas de referência, etc…\n🔗📚🛠️",
+    "crumbs": [
+      "Recursos"
+    ]
   },
   {
-    "objectID": "index.html#quarto",
-    "href": "index.html#quarto",
-    "title": "Blogpost",
+    "objectID": "posts/2025-09-17-Fazer/index.html",
+    "href": "posts/2025-09-17-Fazer/index.html",
+    "title": "Pausa Técnica - Lançamento",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "text": "Este não será certamente o artigo mais interessante do blog, mas é sem dúvida dos mais importantes. É o momento em que finalmente decidi agir.\n\n\nComo qualquer profissional, ao longo dos anos fui recolhendo episódios, histórias (algumas caricatas), situações boas outras nem tanto mas sobretudo fui aprendendo. A esta bagagem normalmente chamamos Experiência.\nAo longo da minha carreira, tive a oportunidade de me cruzar com pessoas fantásticas de diferentes áreas, diferentes perfis e até nacionalidades. Esta exposição a situações complexas moldou-me e obrigou-me a desenvolver mecanismos para sistematizar informação, nesse processo de sistematização fui encontrando padrões, dogmas, mitos e tabus que resultaram em muitas reflexões e um mapa de conceitos cada vez mais complexo.\nColecionei um conjunto de notas soltas e apontamentos que são conhecimento puro mas inuteis por estarem perdidos em gavetas seja em forma de blocos de notas poeirentos ou pen drives. Nem para mim são utéis.\nEm conversas técnicas com colegas, não raras vezes me ocorre que tenho notas sobre a questão, mesmo quando as encontro (e nem sempre é fácil), não estão em formato partilhável e de fácil consumo sem o devido enquadramento. Eram notas para mim…\nMuitas dessas notas e reflexões foram fonte de inspiração para criar conteúdo explicativo de conceitos complexos que partilhei com colegas e que lhes foi útil.\nSugeriram-me escrever um livro com esses conteúdos, mas entrar de cabeça num projeto dessa envergadura pareceu-me demasiado arriscado. No entanto não pude ignorar e assim surgiu a ideia de criar um blog e passar a fazer o registo das minhas notas e reflexões online.\nAo contrário de um livro, um blog não precisa ter todo o seu conteúdo criado antes de ver a luz do dia e pode começar ser útil desde o primeiro post.\n\n\n\nNão sei qual será a recetividade que o blog terá. Parto nesta aventura sem expetativas, o meu objetivo é a viagem.\nNa pior das hipóteses terei os meus apontamentos organizados e à distância de um clique.\n\n\n\nA tecnologia permite-nos ser mais eficientes e alcançar coisas incriveis. Em particular, as ferramentas de código aberto que hoje em dia rivalizam com as melhores ferramentas comerciais permitem tornar acessível “super poderes” ao comum dos mortais.\nNo desenvolvimento deste blog, tiro partido deste tipo de ferramentas e partilho com total transparência como o fiz e o que fui aprendendo para que outros o possam fazer.\nÉ um site em código aberto, totalmente acessível em Github"
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "DC.js + Crossfilter Example",
+    "objectID": "posts/2025-09-17-Fazer/index.html#como-surgiu-esta-ideia",
+    "href": "posts/2025-09-17-Fazer/index.html#como-surgiu-esta-ideia",
+    "title": "Pausa Técnica - Lançamento",
     "section": "",
-    "text": "This example shows how to build an interactive dashboard with dc.js and crossfilter.js right inside a Quarto page."
+    "text": "Como qualquer profissional, ao longo dos anos fui recolhendo episódios, histórias (algumas caricatas), situações boas outras nem tanto mas sobretudo fui aprendendo. A esta bagagem normalmente chamamos Experiência.\nAo longo da minha carreira, tive a oportunidade de me cruzar com pessoas fantásticas de diferentes áreas, diferentes perfis e até nacionalidades. Esta exposição a situações complexas moldou-me e obrigou-me a desenvolver mecanismos para sistematizar informação, nesse processo de sistematização fui encontrando padrões, dogmas, mitos e tabus que resultaram em muitas reflexões e um mapa de conceitos cada vez mais complexo.\nColecionei um conjunto de notas soltas e apontamentos que são conhecimento puro mas inuteis por estarem perdidos em gavetas seja em forma de blocos de notas poeirentos ou pen drives. Nem para mim são utéis.\nEm conversas técnicas com colegas, não raras vezes me ocorre que tenho notas sobre a questão, mesmo quando as encontro (e nem sempre é fácil), não estão em formato partilhável e de fácil consumo sem o devido enquadramento. Eram notas para mim…\nMuitas dessas notas e reflexões foram fonte de inspiração para criar conteúdo explicativo de conceitos complexos que partilhei com colegas e que lhes foi útil.\nSugeriram-me escrever um livro com esses conteúdos, mas entrar de cabeça num projeto dessa envergadura pareceu-me demasiado arriscado. No entanto não pude ignorar e assim surgiu a ideia de criar um blog e passar a fazer o registo das minhas notas e reflexões online.\nAo contrário de um livro, um blog não precisa ter todo o seu conteúdo criado antes de ver a luz do dia e pode começar ser útil desde o primeiro post."
   },
   {
-    "objectID": "blog.html#interactive-dashboard",
-    "href": "blog.html#interactive-dashboard",
-    "title": "DC.js + Crossfilter Example",
+    "objectID": "posts/2025-09-17-Fazer/index.html#o-meu-blog-as-minhas-regras",
+    "href": "posts/2025-09-17-Fazer/index.html#o-meu-blog-as-minhas-regras",
+    "title": "Pausa Técnica - Lançamento",
     "section": "",
-    "text": "This example shows how to build an interactive dashboard with dc.js and crossfilter.js right inside a Quarto page."
+    "text": "Não sei qual será a recetividade que o blog terá. Parto nesta aventura sem expetativas, o meu objetivo é a viagem.\nNa pior das hipóteses terei os meus apontamentos organizados e à distância de um clique."
+  },
+  {
+    "objectID": "posts/2025-09-17-Fazer/index.html#tecnologia-e-transparência",
+    "href": "posts/2025-09-17-Fazer/index.html#tecnologia-e-transparência",
+    "title": "Pausa Técnica - Lançamento",
+    "section": "",
+    "text": "A tecnologia permite-nos ser mais eficientes e alcançar coisas incriveis. Em particular, as ferramentas de código aberto que hoje em dia rivalizam com as melhores ferramentas comerciais permitem tornar acessível “super poderes” ao comum dos mortais.\nNo desenvolvimento deste blog, tiro partido deste tipo de ferramentas e partilho com total transparência como o fiz e o que fui aprendendo para que outros o possam fazer.\nÉ um site em código aberto, totalmente acessível em Github"
+  },
+  {
+    "objectID": "pausa.html",
+    "href": "pausa.html",
+    "title": "O projeto",
+    "section": "",
+    "text": "Nos dias de hoje, a velocidade é lei, a exigência de “resolver” problemas rapidamente, retira o tempo de reflexão, de diagnóstico e de planeamento.\nQuando estamos em modo “execução” o foco está no agora e na pressão para remover o irritante. Por vezes acabamos por atacar o sintoma e não necessariamente o problema. Removido o sintoma, passamos para o próximo irritante.\nNa Pausa Técnica vamos abrandar o tempo, refletir, perceber o porquê das coisas, as suas implicações e propor soluções.\nNeste espaço o lema é:\n\n\n\n\n\ngraph LR\n  A(PARAR) --&gt; B(PENSAR) --&gt; C(AGIR)\n\n\n\n\n\n\n\n\n\n\nOs sistemas de mobilidade são o foco deste espaço, sempre do ponto de vista técnico e pragmático com o intuito de estabelecer bases sólidas, para recolher e organizar o conhecimento.\nPropositadamente será escrito em português e com linguagem simples, relaxada e sem floreados. É uma conversa entre colegas, daquelas que nos dão clareza e que perduram na nossa memória.\nSempre que possível tentarei complementar a informação escrita com visualizações que ajudem a sistematização.\n\n\n\nNão consegui encontrar um repositório de informação organizada e acessível, por isso, em vez de me lamentar, decidi compilar o que vou encontrando e que possa ser de utilidade para outros, quer ao nível de informação quer ao nível de ferramentas.",
+    "crumbs": [
+      "Sobre"
+    ]
+  },
+  {
+    "objectID": "pausa.html#porquê-pausa-técnica",
+    "href": "pausa.html#porquê-pausa-técnica",
+    "title": "O projeto",
+    "section": "",
+    "text": "Nos dias de hoje, a velocidade é lei, a exigência de “resolver” problemas rapidamente, retira o tempo de reflexão, de diagnóstico e de planeamento.\nQuando estamos em modo “execução” o foco está no agora e na pressão para remover o irritante. Por vezes acabamos por atacar o sintoma e não necessariamente o problema. Removido o sintoma, passamos para o próximo irritante.\nNa Pausa Técnica vamos abrandar o tempo, refletir, perceber o porquê das coisas, as suas implicações e propor soluções.\nNeste espaço o lema é:\n\n\n\n\n\ngraph LR\n  A(PARAR) --&gt; B(PENSAR) --&gt; C(AGIR)",
+    "crumbs": [
+      "Sobre"
+    ]
+  },
+  {
+    "objectID": "pausa.html#o-que-esperar",
+    "href": "pausa.html#o-que-esperar",
+    "title": "O projeto",
+    "section": "",
+    "text": "Os sistemas de mobilidade são o foco deste espaço, sempre do ponto de vista técnico e pragmático com o intuito de estabelecer bases sólidas, para recolher e organizar o conhecimento.\nPropositadamente será escrito em português e com linguagem simples, relaxada e sem floreados. É uma conversa entre colegas, daquelas que nos dão clareza e que perduram na nossa memória.\nSempre que possível tentarei complementar a informação escrita com visualizações que ajudem a sistematização.",
+    "crumbs": [
+      "Sobre"
+    ]
+  },
+  {
+    "objectID": "pausa.html#recursos",
+    "href": "pausa.html#recursos",
+    "title": "O projeto",
+    "section": "",
+    "text": "Não consegui encontrar um repositório de informação organizada e acessível, por isso, em vez de me lamentar, decidi compilar o que vou encontrando e que possa ser de utilidade para outros, quer ao nível de informação quer ao nível de ferramentas.",
+    "crumbs": [
+      "Sobre"
+    ]
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Posts",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        **Título**\n      \n      \n        **Data** - Oldest\n      \n      \n        **Data** - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nPausa Técnica - Lançamento\n\n\nParei, pensei e agi, desafio-te a fazer o mesmo\n\n3 min\n\n\nMobilidade\n\nBlog\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Blog"
+    ]
   }
 ]
