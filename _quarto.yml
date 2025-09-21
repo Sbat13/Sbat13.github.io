@@ -3,26 +3,82 @@ project:
   output-dir: _site
   render: 
     - "*.qmd"
+    - "*.ipynb"
     - "!book/"
+  
 
 execute:
   freeze: auto
 
 website:
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: About
-      - href: blog.qmd
-        text: Blog
-      - href: book/index.html
-        text: Book
-        target: _blank
+  announcement:
+    icon: rocket-takeoff-fill
+    dismissable: true
+    content: "**LIVE** - Lançamento do website!!!"
+    type: primary
+    position: below-navbar 
 
-formats:
+  favicon: logo.png
+  site-url: https://sbat13.github.io/
+  cookie-consent:
+    type: express
+    style: headline
+    language: pt
+    prefs-text: Cookies
+  open-graph:
+    site-name: Pausa Técnica
+    locale: pt_PT
+    #language: pt
+  search:
+    location: sidebar
+    type: overlay
+  
+  #navbar:
+  #  logo: logo.png
+  #  left:
+  #    - text: Home
+  #      href: index.qmd
+  #    - text: Sobre
+  #      href: pausa.qmd
+  #    - text: Blog
+  #      href: blog.qmd
+  #    - text: Recursos
+  #      href: recursos.qmd
+      #- href: book/index.html
+      #  stext: Book
+      #  target: _blank
+
+  sidebar:
+    style: docked
+    logo: logo.png
+    background: white
+    contents:
+      - text: Sobre
+        href: pausa.qmd
+      - text: Blog
+        href: posts/index.qmd
+      - text: Recursos
+        href: recursos/index.qmd
+  
+  page-footer:
+    left: "Copyright 2025"
+    right:
+      - icon: github
+        href: https://github.com/Sbat13
+        target: _blank
+      - icon: linkedin
+        href: https://www.linkedin.com/in/sfbatista/
+        target: _blank
+      - icon: envelope-at-fill
+        href: mailto:sbat13@yahoo.com
+
+format:
   html:
-    theme: cosmo
-    css: styles.css
+    embed-resources: true
+    theme: flatly
+    css: [mermaid-colors.css]
+    toc: true
+
+
+
 

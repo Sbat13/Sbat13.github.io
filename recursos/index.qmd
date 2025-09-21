@@ -1,0 +1,16 @@
+---
+lang: pt
+title: "Recursos úteis"
+#listing:
+#  - id: atalhos
+#    contents:
+#        - recursos/livros.yaml
+#        - recursos/software.yaml
+#        - recursos/paginas.yaml
+#    type: table
+#    fields: [title,description,categories]
+---
+
+Compilação de links úteis, desde ferramentas online, páginas de referência, etc...
+
+🔗📚🛠️

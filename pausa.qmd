@@ -1,0 +1,45 @@
+---
+lang: pt
+---
+
+# O projeto
+
+## Porquê **Pausa Técnica** ?
+
+Nos dias de hoje, a velocidade é lei, a exigência de "resolver" problemas rapidamente, retira o tempo de reflexão, de diagnóstico e de planeamento.
+
+Quando estamos em modo "execução" o foco está no agora e na pressão para remover o irritante. Por vezes acabamos por atacar o sintoma e não necessariamente o problema. Removido o sintoma, passamos para o próximo irritante.
+
+Na Pausa Técnica vamos abrandar o tempo, refletir, perceber o porquê das coisas, as suas implicações e propor soluções.
+
+Neste espaço o lema é:
+
+```{mermaid}
+graph LR
+  A(PARAR) --> B(PENSAR) --> C(AGIR)
+
+```
+
+## O que esperar?
+
+Os sistemas de mobilidade são o foco deste espaço, sempre do ponto de vista técnico e pragmático com o intuito de estabelecer bases sólidas, para recolher e organizar o conhecimento.
+
+Propositadamente será escrito em português e com linguagem simples, relaxada e sem floreados. É uma conversa entre colegas, daquelas que nos dão clareza e que perduram na nossa memória.
+
+Sempre que possível tentarei complementar a informação escrita com visualizações que ajudem a sistematização.
+
+## Recursos
+
+Não consegui encontrar um repositório de informação organizada e acessível, por isso, em vez de me lamentar, decidi compilar o que vou encontrando e que possa ser de utilidade para outros, quer ao nível de informação quer ao nível de ferramentas.
+
+# O Autor
+
+O meu nome é [Sérgio Baptista](https://www.linkedin.com/in/sfbatista/) e trabalho na área dos transportes desde 2002.
+
+Sou um pragmático sob protesto ou um perfecionista com provas dadas.
+
+Um curioso apaixonado por tecnologia que não alinha em "sound bytes". Acredito em processos e naquilo que podemos controlar.
+
+Este projeto é a minha forma de retribuir e prestar o devido tributo à generosidade das pessoas com quem tive a oportunidade de aprender e crescer como profissional ao longo dos mais de 20 anos da minha carreira nos transportes.
+
+Espero com este humilde contributo, criar um espaço para a discussão técnica, motivar e atrair interesse para um setor tão importante quer do ponto de vista social, como económico.

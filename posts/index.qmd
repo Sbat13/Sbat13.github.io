@@ -1,0 +1,27 @@
+---
+title: "Posts"
+listing:
+  - id: posts
+    contents: 
+        - "*.qmd"
+        - "*.ipynb"
+    sort: "date desc"
+    type: grid
+    fields: [image,date, title, subtitle, categories, reading-time]
+    field-display-names: 
+      date: "**Data**"
+      title: "**Título**"
+      subtitle: "Subtítulo"
+      categories: "Tópicos"
+      reading-time: "Tempo de leitura"
+    max-items: 6
+    #categories: unnumbered
+    sort-ui: true
+    filter-ui: true
+    #page-size: 6    
+page-layout: full
+title-block-banner: false
+toc: true
+---
+::: {#posts}
+:::
