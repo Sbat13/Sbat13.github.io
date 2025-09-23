@@ -49,4 +49,4 @@ No desenvolvimento deste blog, tiro partido deste tipo de ferramentas e partilho
 
 ------------------------------------------------------------------------
 
-Partilhar: [{{< fa brands linkedin >}}](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsbat13.github.io%2Fposts%2F2025-09-17-Fazer%2F)
+Partilhar: [{{< fa brands linkedin >}}](https://www.linkedin.com/shareArticle?mini=true&url=https://sbat13.github.io/posts/2025-09-17-Fazer/)
