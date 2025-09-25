@@ -11,6 +11,14 @@ execute:
   freeze: auto
 
 website:
+  title: "Pausa Técnica"
+  favicon: "logo.png"
+  site-url: "https://sbat13.github.io"
+  image: "logo.png"
+  open-graph:
+    site-name: "Pausa Técnica"
+    locale: pt_PT
+
   announcement:
     icon: rocket-takeoff-fill
     dismissable: true
@@ -18,17 +26,11 @@ website:
     type: primary
     position: below-navbar 
 
-  favicon: logo.png
-  site-url: https://sbat13.github.io/
   cookie-consent:
     type: express
     style: headline
     language: pt
     prefs-text: Cookies
-  open-graph:
-    site-name: Pausa Técnica
-    locale: pt_PT
-    #language: pt
   search:
     location: sidebar
     type: overlay
