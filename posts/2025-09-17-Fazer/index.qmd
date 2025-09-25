@@ -58,6 +58,5 @@ No desenvolvimento deste blog, tiro partido deste tipo de ferramentas e partilho
 É um site em código aberto, totalmente acessível em [Github](https://github.com/Sbat13/Sbat13.github.io)
 
 ------------------------------------------------------------------------
-
-
-Partilhar: [{{< fa brands linkedin >}}](https://www.linkedin.com/shareArticle?mini=true&url=https://sbat13.github.io/posts/2025-09-17-Fazer/)
+Partilhar:
+{{< include "/_share-links.qmd" >}}

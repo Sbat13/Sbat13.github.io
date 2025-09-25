@@ -1,0 +1,13 @@
+<!-- _share-links.qmd -->
+<div class="social-share">
+  <a href="#" data-sharer="linkedin" title="Share on LinkedIn"> {{< fa brands linkedin >}}</a>
+  <a href="#" data-sharer="whatsapp" title="Share on WhatsApp">{{< fa brands whatsapp >}}</a>
+  <a href="#" data-sharer="email" title="Share via Email">{{< fa envelope >}}</a>
+</div>
+<script src="/sharer.core.js"></script>
+<script src="/services/linkedin.js"></script>
+<script src="/services/whatsapp.js"></script>
+<script src="/services/email.js"></script>
+<script>
+  Sharer.init(); // ensure click listeners are attached
+</script>
