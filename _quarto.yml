@@ -77,7 +77,9 @@ website:
 format:
   html:
     embed-resources: true
-    theme: flatly
+    theme: 
+      light: flatly
+      dark: darkly
     css: [mermaid-colors.css]
     toc: true
 

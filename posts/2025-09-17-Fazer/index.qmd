@@ -15,10 +15,18 @@ categories:
   - "Blog"
 ---
 
+::::{layout="[70,30]"}
+::: {#first-column}
 # Lançamento
-
 Este não será certamente o artigo mais interessante do blog, mas é sem dúvida dos mais importantes. É o momento em que finalmente decidi agir.
+:::
 
+::: {#second-column}
+
+![](logo.png){width=200 .preview-image}
+
+:::
+::::
 ## Como surgiu esta ideia?
 
 Como qualquer profissional, ao longo dos anos fui recolhendo episódios, histórias (algumas caricatas), situações boas outras nem tanto mas sobretudo fui aprendendo. A esta bagagem normalmente chamamos **Experiência**.
