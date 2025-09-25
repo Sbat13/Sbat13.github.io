@@ -23,7 +23,7 @@ Este não será certamente o artigo mais interessante do blog, mas é sem dúvid
 
 ::: {#second-column}
 
-![](logo.png){width=200 .preview-image}
+![](images/rsz_2logo.png){width=200 .preview-image}
 
 :::
 ::::
