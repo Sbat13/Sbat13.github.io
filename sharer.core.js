@@ -22,8 +22,6 @@
     var target = ev.currentTarget || ev.srcElement;
     var sharer = new Sharer(target);
     sharer.share();
-    console.log("Sharer clicked:", target);
-    console.log("Share URL:", shareUrl);
   };
 
   Sharer.prototype = {

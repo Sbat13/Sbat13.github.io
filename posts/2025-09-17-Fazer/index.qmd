@@ -2,10 +2,8 @@
 date: "2025-09-21"
 title: "Pausa Técnica - Lançamento"
 subtitle: "Parei, pensei e agi, desafio-te a fazer o mesmo"
-description: "Lançamento do blog Pausa Técnica dedicado à mobilidade em Portugal"
 image: images/rsz_2logo.png
 open-graph:
-  title: "Pausa Técnica"
   description: "Lançamento do blog dedicado à mobilidade em Portugal"
   image-width: 1200
   image-height: 630
