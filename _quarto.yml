@@ -78,7 +78,7 @@ website:
 format:
   html:
     canonical-url: true
-    embed-resources: true
+    embed-resources: false
     theme: 
       light: flatly
       #dark: darkly

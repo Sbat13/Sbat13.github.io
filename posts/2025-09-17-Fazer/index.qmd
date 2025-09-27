@@ -7,13 +7,18 @@ lang: pt
 open-graph:
   description: "Lançamento do blog dedicado à mobilidade em Portugal"
   image: images/rsz_2logo.png
-  image-width: 600
-  image-height: 315
+  image-width: 200
   type: article
 toc: true
 categories: 
   - "Mobilidade"
   - "Blog"
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: scrartcl
+    output-file: "20250921_PT_Lançamento.pdf"
 ---
 
 ::::{layout="[70,30]"}
@@ -59,5 +64,5 @@ No desenvolvimento deste blog, tiro partido deste tipo de ferramentas e partilho
 É um site em código aberto, totalmente acessível em [Github](https://github.com/Sbat13/Sbat13.github.io)
 
 ------------------------------------------------------------------------
-Partilhar:
+[Pausa Técnica](https://sbat13.github.io/)
 {{< include "/_share-links.qmd" >}}
