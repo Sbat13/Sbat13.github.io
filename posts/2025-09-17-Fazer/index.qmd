@@ -15,10 +15,10 @@ categories:
   - "Blog"
 format:
   html: default
-  pdf:
-    toc: false
-    documentclass: scrartcl
-    output-file: "20250921_PT_Lançamento.pdf"
+  #pdf:
+  #  toc: false
+  #  documentclass: scrartcl
+  #  output-file: "20250921_PT_Lançamento.pdf"
 ---
 
 ::::{layout="[70,30]"}
