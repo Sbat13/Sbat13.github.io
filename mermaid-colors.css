@@ -1,0 +1,7 @@
+:root {
+  --mermaid-font-family: var(--bs-body-font-family);
+  --mermaid-primary-color: var(--bs-primary);
+  --mermaid-primary-text-color: var(--bs-body-input-color);
+  --mermaid-secondary-color: var(--bs-secondary);
+  --mermaid-font-size: var(--bs-body-font-size, 14px);
+}
