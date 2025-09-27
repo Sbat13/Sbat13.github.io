@@ -9,6 +9,7 @@ open-graph:
   image: images/rsz_2logo.png
   image-width: 600
   image-height: 315
+  type: article
 toc: true
 categories: 
   - "Mobilidade"
