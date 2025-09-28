@@ -1,5 +1,8 @@
 ---
 lang: pt
+open-graph:
+  description: "Blog técnico dedicado à mobilidade em Portugal"
+  type: website
 ---
 
 # O projeto

@@ -11,6 +11,9 @@ listing:
     table-striped: true
     page-size: 5
 toc: false
+open-graph:
+  description: "Lista de links de sites úteis para profissionais de Transportes"
+  type: article
 ---
 
 Compilação de links úteis, desde ferramentas online, páginas de referência, etc...
