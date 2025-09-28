@@ -4,7 +4,7 @@
     "href": "recursos/index.html",
     "title": "Recursos úteis",
     "section": "",
-    "text": "Compilação de links úteis, desde ferramentas online, páginas de referência, etc…\n🔗📚🛠️",
+    "text": "Compilação de links úteis, desde ferramentas online, páginas de referência, etc… 🔗📚🛠️\n\n\n\n   \n    \n    \n      Ordenar por\n      Pré-selecionado\n      \n        Título\n      \n      \n        Descrição\n      \n      \n        Categorias\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTítulo\n\n\n\nDescrição\n\n\n\nCategorias\n\n\n\n\n\n\n\n\nMobilityData.org\n\n\nEsta organização dedica-se à governância dos standards da indústria em matéria de dados, GTFS, GBFS, TODS, TIDES. O Site tem muita informação, destaco os roadmaps que permitem antecipar as alterações previstas nos standards\n\n\nGTFS, GBFS, TODS, TIDES\n\n\n\n\n\n\nGTFS.org\n\n\nDocumentação detalhada do standard GTFS, exemplos, boas práticas.\n\n\nGTFS, Documentação\n\n\n\n\n\n\nCanonical GTFS Schedule Validator\n\n\nValidador de feeds GTFS online \n\n\nGTFS, Ferramenta\n\n\n\n\n\n\nMobility Database\n\n\nUma das maiores fontes de feeds GTFS, GTFS-RT e GBFS, incluindo Portugal\n\n\nGTFS, GBFS, Dados\n\n\n\n\n\n\nGBFS Validator/ Visualizer\n\n\nValidador de feeds GBFS online, permite a visualização da informação do sistema (Tarifas, Estações, vehículos, Estado da bateria, etc)\n\n\nGBFS, Ferramenta, Visualizador\n\n\n\n\n\n\nOpenStreetMap\n\n\nAlternativa opensource ao Google Maps. A informação é atualizada pela comunidade.\n\n\nFerramenta, Mapas\n\n\n\n\n\n\nOpenRouteService\n\n\nAlternativa open source ao Google directions. Utiliza a informação do OpenStreetmap.\n\n\nFerramenta, Roteamento\n\n\n\n\n\n\nVahlhalla App- [DEMO]\n\n\nApp que utiliza a API do motor de roteamento Valhalla (utiliza a informação do OpenStreetMap).\n\n\nDEMO, Ferramenta, Roteamento\n\n\n\n\n\n\nLOOM [DEMO]\n\n\nDemonstração de algoritmo de desenho automático de mapas de redes de transportes\n\n\nDEMO, Investigação, Mapas, Algoritmo\n\n\n\n\n\n\nTravic [DEMO]\n\n\nApp que permite visualizar no mapa a localização (real ou teórica) de viaturas com base em feeds de GTFS.\n\n\nGTFS, Visualizador, DEMO\n\n\n\n\n\n\nTransitous.org\n\n\nAgregador de feeds GTFS independente. Contém feeds de Portugal\n\n\nGTFS, Dados\n\n\n\n\n\n\nPlanet.motis-project.org [DEMO]\n\n\nPlaneador de viagem em transporte público (utiliza os dados do Transitous)\n\n\nGTFS, Visualizador, Roteamento, DEMO\n\n\n\n\n\n\nNenhum item correspondente\n\n  \n\n\n\n\nPausa Técnica",
     "crumbs": [
       "Recursos"
     ]
@@ -28,7 +28,7 @@
     "href": "posts/2025-09-17-Fazer/index.html#o-meu-blog-as-minhas-regras",
     "title": "Lançamento",
     "section": "O meu blog, as minhas regras",
-    "text": "O meu blog, as minhas regras\nNão sei qual será a recetividade que o blog terá. Parto nesta aventura sem expetativas, o meu objetivo é a viagem.\nNa pior das hipóteses terei os meus apontamentos organizados e à distância de um clique."
+    "text": "O meu blog, as minhas regras\nNão sei qual será a recetividade que o blog terá. Parto nesta aventura sem expetativas, o meu objetivo é a viagem.\nNa pior das hipóteses, terei os meus apontamentos organizados e à distância de um clique."
   },
   {
     "objectID": "posts/2025-09-17-Fazer/index.html#tecnologia-e-transparência",
@@ -38,8 +38,8 @@
     "text": "Tecnologia e transparência\nA tecnologia permite-nos ser mais eficientes e alcançar coisas incríveis. Em particular, há ferramentas de código aberto disponiveis que rivalizam com as melhores ferramentas comerciais e que permitem tornar acessiveis “super poderes” ao comum dos mortais.\nNo desenvolvimento deste blog, tiro partido deste tipo de ferramentas e partilho com total transparência como o fiz e o que fui aprendendo, faço-o para que outros também o possam fazer.\nÉ um site em código aberto, totalmente acessível em Github\n\nPausa Técnica"
   },
   {
-    "objectID": "pausa.html",
-    "href": "pausa.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "O projeto",
     "section": "",
     "text": "Nos dias de hoje, a velocidade é lei, a exigência de “resolver” problemas rapidamente, retira o tempo de reflexão, de diagnóstico e de planeamento.\nQuando estamos em modo “execução” o foco está no agora e na pressão para remover o irritante. Por vezes acabamos por atacar o sintoma e não necessariamente o problema. Removido o sintoma, passamos para o próximo irritante.\nNa Pausa Técnica vamos abrandar o tempo, refletir, perceber o porquê das coisas, as suas implicações e propor soluções.\nNeste espaço o lema é:\n\n\n\n\n\ngraph LR\n  A(PARAR) --&gt; B(PENSAR) --&gt; C(AGIR)\n\n\n\n\n\n\n\n\n\n\nOs sistemas de mobilidade são o foco deste espaço, sempre do ponto de vista técnico e pragmático com o intuito de estabelecer bases sólidas, para recolher e organizar o conhecimento.\nPropositadamente será escrito em português e com linguagem simples, relaxada e sem floreados. É uma conversa entre colegas, daquelas que nos dão clareza e que perduram na nossa memória.\nSempre que possível tentarei complementar a informação escrita com visualizações que ajudem a sistematização.\n\n\n\nNão consegui encontrar um repositório de informação organizada e acessível, por isso, em vez de me lamentar, decidi compilar o que vou encontrando e que possa ser de utilidade para outros, quer ao nível de informação quer ao nível de ferramentas.",
@@ -48,8 +48,8 @@
     ]
   },
   {
-    "objectID": "pausa.html#porquê-pausa-técnica",
-    "href": "pausa.html#porquê-pausa-técnica",
+    "objectID": "index.html#porquê-pausa-técnica",
+    "href": "index.html#porquê-pausa-técnica",
     "title": "O projeto",
     "section": "",
     "text": "Nos dias de hoje, a velocidade é lei, a exigência de “resolver” problemas rapidamente, retira o tempo de reflexão, de diagnóstico e de planeamento.\nQuando estamos em modo “execução” o foco está no agora e na pressão para remover o irritante. Por vezes acabamos por atacar o sintoma e não necessariamente o problema. Removido o sintoma, passamos para o próximo irritante.\nNa Pausa Técnica vamos abrandar o tempo, refletir, perceber o porquê das coisas, as suas implicações e propor soluções.\nNeste espaço o lema é:\n\n\n\n\n\ngraph LR\n  A(PARAR) --&gt; B(PENSAR) --&gt; C(AGIR)",
@@ -58,8 +58,8 @@
     ]
   },
   {
-    "objectID": "pausa.html#o-que-esperar",
-    "href": "pausa.html#o-que-esperar",
+    "objectID": "index.html#o-que-esperar",
+    "href": "index.html#o-que-esperar",
     "title": "O projeto",
     "section": "",
     "text": "Os sistemas de mobilidade são o foco deste espaço, sempre do ponto de vista técnico e pragmático com o intuito de estabelecer bases sólidas, para recolher e organizar o conhecimento.\nPropositadamente será escrito em português e com linguagem simples, relaxada e sem floreados. É uma conversa entre colegas, daquelas que nos dão clareza e que perduram na nossa memória.\nSempre que possível tentarei complementar a informação escrita com visualizações que ajudem a sistematização.",
@@ -68,8 +68,8 @@
     ]
   },
   {
-    "objectID": "pausa.html#recursos",
-    "href": "pausa.html#recursos",
+    "objectID": "index.html#recursos",
+    "href": "index.html#recursos",
     "title": "O projeto",
     "section": "",
     "text": "Não consegui encontrar um repositório de informação organizada e acessível, por isso, em vez de me lamentar, decidi compilar o que vou encontrando e que possa ser de utilidade para outros, quer ao nível de informação quer ao nível de ferramentas.",
@@ -82,7 +82,7 @@
     "href": "posts/index.html",
     "title": "Posts",
     "section": "",
-    "text": "Ordenar por\n      Pré-selecionado\n      \n        **Título**\n      \n      \n        **Data** - Mais velho\n      \n      \n        **Data** - O mais novo\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nLançamento\n\n\nParei, pensei e agi, desafio-te a fazer o mesmo\n\n3 minutos\n\n\nMobilidade\n\nBlog\n\n\n\n\n21 de set. de 2025\n\n\n\n\n\n\nNenhum item correspondente",
+    "text": "Ordenar por\n      Pré-selecionado\n      \n        **Título**\n      \n      \n        **Data** - Mais velho\n      \n      \n        **Data** - O mais novo\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nLançamento\n\n\nParei, pensei e agi, desafio-te a fazer o mesmo\n\n3 minutos\n\n\nMobilidade\n\nBlog\n\n\n\n\n2025-09-21\n\n\n\n\n\n\nNenhum item correspondente",
     "crumbs": [
       "Blog"
     ]

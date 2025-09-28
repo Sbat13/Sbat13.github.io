@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./logo.png" rel="icon" type="image/png">
+<link href="./icon.png" rel="icon" type="image/png">
 <script src="site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
@@ -45,9 +45,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b51f72b8e03d858bbb78e1490e889879.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-b51f72b8e03d858bbb78e1490e889879.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-b51f72b8e03d858bbb78e1490e889879.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4b40df306c19f63bce3d1f9b52ed30ca.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-4b40df306c19f63bce3d1f9b52ed30ca.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4b40df306c19f63bce3d1f9b52ed30ca.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -78,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" charset="UTF-8">
 document.addEventListener('DOMContentLoaded', function () {
 cookieconsent.run({
-  "notice_banner_type":"interstitial",
+  "notice_banner_type":"simple",
   "consent_type":"implied",
   "palette":"light",
   "language":"en",
@@ -92,10 +94,14 @@ cookieconsent.run({
 });
 </script> 
   
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="mermaid-colors.css">
 <meta property="og:title" content="Pausa Técnica">
+<meta property="og:description" content="">
 <meta property="og:image" content="https://sbat13.github.io/logo.png">
 <meta property="og:site_name" content="Pausa Técnica">
 <meta property="og:locale" content="pt_PT">
@@ -113,7 +119,7 @@ cookieconsent.run({
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Sobre</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -123,7 +129,7 @@ cookieconsent.run({
   </nav>
   <div id="quarto-announcement" data-announcement-id="386b8dd7d457f2778366d0289efc4084" class="alert alert-primary hidden"><i class="bi bi-rocket-takeoff-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
 <p><strong>LIVE</strong> - Lançamento do website!!!</p>
-</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
+</div></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
@@ -131,8 +137,8 @@ cookieconsent.run({
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="./logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="./logo-nobg.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./logo-nobg.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <div id="quarto-search" class="quarto-navigation-tool px-1" title="Procurar"></div>
@@ -142,7 +148,7 @@ cookieconsent.run({
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pausa.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Sobre</span></a>
   </div>
 </li>
@@ -163,8 +169,20 @@ cookieconsent.run({
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#o-projeto" id="toc-o-projeto" class="nav-link active" data-scroll-target="#o-projeto">O projeto</a>
+  <ul class="collapse">
+  <li><a href="#porquê-pausa-técnica" id="toc-porquê-pausa-técnica" class="nav-link" data-scroll-target="#porquê-pausa-técnica">Porquê <strong>Pausa Técnica</strong> ?</a></li>
+  <li><a href="#o-que-esperar" id="toc-o-que-esperar" class="nav-link" data-scroll-target="#o-que-esperar">O que esperar?</a></li>
+  <li><a href="#recursos" id="toc-recursos" class="nav-link" data-scroll-target="#recursos">Recursos</a></li>
+  </ul></li>
+  <li><a href="#o-autor" id="toc-o-autor" class="nav-link" data-scroll-target="#o-autor">O Autor</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -172,8 +190,62 @@ cookieconsent.run({
 
 
 
+<section id="o-projeto" class="level1">
+<h1>O projeto</h1>
+<section id="porquê-pausa-técnica" class="level2">
+<h2 class="anchored" data-anchor-id="porquê-pausa-técnica">Porquê <strong>Pausa Técnica</strong> ?</h2>
+<p>Nos dias de hoje, a velocidade é lei, a exigência de “resolver” problemas rapidamente, retira o tempo de reflexão, de diagnóstico e de planeamento.</p>
+<p>Quando estamos em modo “execução” o foco está no agora e na pressão para remover o irritante. Por vezes acabamos por atacar o sintoma e não necessariamente o problema. Removido o sintoma, passamos para o próximo irritante.</p>
+<p>Na Pausa Técnica vamos abrandar o tempo, refletir, perceber o porquê das coisas, as suas implicações e propor soluções.</p>
+<p>Neste espaço o lema é:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+  A(PARAR) --&gt; B(PENSAR) --&gt; C(AGIR)
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="o-que-esperar" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-esperar">O que esperar?</h2>
+<p>Os sistemas de mobilidade são o foco deste espaço, sempre do ponto de vista técnico e pragmático com o intuito de estabelecer bases sólidas, para recolher e organizar o conhecimento.</p>
+<p>Propositadamente será escrito em português e com linguagem simples, relaxada e sem floreados. É uma conversa entre colegas, daquelas que nos dão clareza e que perduram na nossa memória.</p>
+<p>Sempre que possível tentarei complementar a informação escrita com visualizações que ajudem a sistematização.</p>
+</section>
+<section id="recursos" class="level2">
+<h2 class="anchored" data-anchor-id="recursos">Recursos</h2>
+<p>Não consegui encontrar um repositório de informação organizada e acessível, por isso, em vez de me lamentar, decidi compilar o que vou encontrando e que possa ser de utilidade para outros, quer ao nível de informação quer ao nível de ferramentas.</p>
+</section>
+</section>
+<section id="o-autor" class="level1">
+<h1>O Autor</h1>
+<p>O meu nome é <a href="https://www.linkedin.com/in/sfbatista/">Sérgio Baptista</a> e trabalho na área dos transportes desde 2002.</p>
+<p>Sou um pragmático sob protesto ou um perfecionista com provas dadas.</p>
+<p>Um curioso apaixonado por tecnologia que não alinha em “sound bytes”. Acredito em processos e naquilo que podemos controlar.</p>
+<p>Este projeto é a minha forma de retribuir e prestar o devido tributo à generosidade das pessoas com quem tive a oportunidade de aprender e crescer como profissional ao longo dos mais de 20 anos da minha carreira nos transportes.</p>
+<p>Espero com este humilde contributo, criar um espaço para a discussão técnica, motivar e atrair interesse para um setor tão importante quer do ponto de vista social, como económico.</p>
+<hr>
+<a href="https://sbat13.github.io/">Pausa Técnica</a> <!-- _share-links.qmd -->
+<div class="social-share" style="display: flex; gap: 10px;">
+<p><a href="#" data-sharer="linkedin" title="Partilhar no LinkedIn"><i class="fa-brands fa-linkedin" aria-label="linkedin"></i></a> <a href="#" data-sharer="whatsapp" title="Partilhar por WhatsApp"><i class="fa-brands fa-whatsapp" aria-label="whatsapp"></i></a> <a href="#" data-sharer="email" title="Partilhar por Email"><i class="fa-solid fa-envelope" aria-label="envelope"></i></a></p>
+</div>
+<script src="./sharer.core.js"></script>
+<script src="./services/linkedin.js"></script>
+<script src="./services/whatsapp.js"></script>
+<script src="./services/email.js"></script>
+<script>
+  Sharer.init(); // ensure click listeners are attached
+</script>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

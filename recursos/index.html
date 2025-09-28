@@ -30,7 +30,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../logo.png" rel="icon" type="image/png">
+<link href="../icon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -45,9 +47,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b51f72b8e03d858bbb78e1490e889879.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-b51f72b8e03d858bbb78e1490e889879.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-b51f72b8e03d858bbb78e1490e889879.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4b40df306c19f63bce3d1f9b52ed30ca.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-4b40df306c19f63bce3d1f9b52ed30ca.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4b40df306c19f63bce3d1f9b52ed30ca.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,11 +78,41 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Procurar"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-atalhos .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
+      page: 5,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-atalhos'] = new List('listing-atalhos', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 
 <script type="text/javascript" charset="UTF-8">
 document.addEventListener('DOMContentLoaded', function () {
 cookieconsent.run({
-  "notice_banner_type":"interstitial",
+  "notice_banner_type":"simple",
   "consent_type":"implied",
   "palette":"light",
   "language":"en",
@@ -93,10 +127,38 @@ cookieconsent.run({
 </script> 
   
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../mermaid-colors.css">
 <meta property="og:title" content="Recursos úteis – Pausa Técnica">
-<meta property="og:description" content="">
 <meta property="og:image" content="https://sbat13.github.io/recursos/logo.png">
 <meta property="og:site_name" content="Pausa Técnica">
 <meta property="og:locale" content="pt_PT">
@@ -122,7 +184,7 @@ cookieconsent.run({
   </nav>
   <div id="quarto-announcement" data-announcement-id="386b8dd7d457f2778366d0289efc4084" class="alert alert-primary hidden"><i class="bi bi-rocket-takeoff-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
 <p><strong>LIVE</strong> - Lançamento do website!!!</p>
-</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
+</div></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
@@ -130,8 +192,8 @@ cookieconsent.run({
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../logo-nobg.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../logo-nobg.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <div id="quarto-search" class="quarto-navigation-tool px-1" title="Procurar"></div>
@@ -141,7 +203,7 @@ cookieconsent.run({
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pausa.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sobre</span></a>
   </div>
 </li>
@@ -162,9 +224,8 @@ cookieconsent.run({
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <h5 class="quarto-listing-category-title">Categorias</h5><div class="quarto-listing-category category-cloud"><div class="category" data-category="QWxnb3JpdG1v"><span class="quarto-category-count category-cloud-1">Algoritmo</span></div><div class="category" data-category="RGFkb3M="><span class="quarto-category-count category-cloud-2">Dados</span></div><div class="category" data-category="REVNTw=="><span class="quarto-category-count category-cloud-4">DEMO</span></div><div class="category" data-category="RG9jdW1lbnRhJUMzJUE3JUMzJUEzbw=="><span class="quarto-category-count category-cloud-1">Documentação</span></div><div class="category" data-category="RmVycmFtZW50YQ=="><span class="quarto-category-count category-cloud-5">Ferramenta</span></div><div class="category" data-category="R0JGUw=="><span class="quarto-category-count category-cloud-3">GBFS</span></div><div class="category" data-category="R1RGUw=="><span class="quarto-category-count category-cloud-6">GTFS</span></div><div class="category" data-category="SW52ZXN0aWdhJUMzJUE3JUMzJUEzbw=="><span class="quarto-category-count category-cloud-1">Investigação</span></div><div class="category" data-category="TWFwYXM="><span class="quarto-category-count category-cloud-2">Mapas</span></div><div class="category" data-category="Um90ZWFtZW50bw=="><span class="quarto-category-count category-cloud-3">Roteamento</span></div><div class="category" data-category="VElERVM="><span class="quarto-category-count category-cloud-1">TIDES</span></div><div class="category" data-category="VE9EUw=="><span class="quarto-category-count category-cloud-1">TODS</span></div><div class="category" data-category="VmlzdWFsaXphZG9y"><span class="quarto-category-count category-cloud-3">Visualizador</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -187,8 +248,240 @@ cookieconsent.run({
 </header>
 
 
-<p>Compilação de links úteis, desde ferramentas online, páginas de referência, etc…</p>
-<p>🔗📚🛠️</p>
+Compilação de links úteis, desde ferramentas online, páginas de referência, etc… 🔗📚🛠️
+<div style="font-size: 0.85rem;">
+<div id="listing-atalhos" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-atalhos-sort" class="form-select" aria-label="Ordenar por" onchange="window['quarto-listings']['listing-atalhos'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Ordenar por</option>
+      <option value="index" data-direction="asc">Pré-selecionado</option>
+      <option value="listing-title-sort" data-direction="asc">
+        Título
+      </option>
+      <option value="listing-description" data-direction="asc">
+        Descrição
+      </option>
+      <option value="listing-categories" data-direction="asc">
+        Categorias
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filtro">
+    </div>
+</div>
+<table class="quarto-listing-table table table-striped table-hover">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Título</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-description" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Descrição</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-categories" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Categorias</a>
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-categories="R1RGUyUyQ0dCRlMlMkNUT0RTJTJDVElERVM=" data-listing-title-sort="MobilityData.org" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://mobilitydata.org/" class="title listing-title">MobilityData.org</a>
+</td>
+<td>
+<span class="listing-description">Esta organização dedica-se à governância dos standards da indústria em matéria de dados, GTFS, GBFS, TODS, TIDES. O Site tem muita informação, destaco os roadmaps que permitem antecipar as alterações previstas nos standards</span>
+</td>
+<td>
+<span class="listing-categories">GTFS, GBFS, TODS, TIDES</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-categories="R1RGUyUyQ0RvY3VtZW50YSVDMyVBNyVDMyVBM28=" data-listing-title-sort="GTFS.org" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://gtfs.org/" class="title listing-title">GTFS.org</a>
+</td>
+<td>
+<span class="listing-description">Documentação detalhada do standard GTFS, exemplos, boas práticas.</span>
+</td>
+<td>
+<span class="listing-categories">GTFS, Documentação</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-categories="R1RGUyUyQ0ZlcnJhbWVudGE=" data-listing-title-sort="Canonical GTFS Schedule Validator" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://gtfs-validator.mobilitydata.org/" class="title listing-title">Canonical GTFS Schedule Validator</a>
+</td>
+<td>
+<span class="listing-description">Validador de feeds GTFS online </span>
+</td>
+<td>
+<span class="listing-categories">GTFS, Ferramenta</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-categories="R1RGUyUyQ0dCRlMlMkNEYWRvcw==" data-listing-title-sort="Mobility Database" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://mobilitydatabase.org/" class="title listing-title">Mobility Database</a>
+</td>
+<td>
+<span class="listing-description">Uma das maiores fontes de feeds GTFS, GTFS-RT e GBFS, incluindo Portugal</span>
+</td>
+<td>
+<span class="listing-categories">GTFS, GBFS, Dados</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-categories="R0JGUyUyQ0ZlcnJhbWVudGElMkNWaXN1YWxpemFkb3I=" data-listing-title-sort="GBFS Validator/ Visualizer" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://gbfs-validator.mobilitydata.org/" class="title listing-title">GBFS Validator/ Visualizer</a>
+</td>
+<td>
+<span class="listing-description">Validador de feeds GBFS online, permite a visualização da informação do sistema (Tarifas, Estações, vehículos, Estado da bateria, etc)</span>
+</td>
+<td>
+<span class="listing-categories">GBFS, Ferramenta, Visualizador</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-categories="RmVycmFtZW50YSUyQ01hcGFz" data-listing-title-sort="OpenStreetMap" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://www.openstreetmap.org/" class="title listing-title">OpenStreetMap</a>
+</td>
+<td>
+<span class="listing-description">Alternativa opensource ao Google Maps. A informação é atualizada pela comunidade.</span>
+</td>
+<td>
+<span class="listing-categories">Ferramenta, Mapas</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-categories="RmVycmFtZW50YSUyQ1JvdGVhbWVudG8=" data-listing-title-sort="OpenRouteService" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://openrouteservice.org/" class="title listing-title">OpenRouteService</a>
+</td>
+<td>
+<span class="listing-description">Alternativa open source ao Google directions. Utiliza a informação do OpenStreetmap.</span>
+</td>
+<td>
+<span class="listing-categories">Ferramenta, Roteamento</span>
+</td>
+
+</tr>
+
+<tr data-index="7" data-categories="REVNTyUyQ0ZlcnJhbWVudGElMkNSb3RlYW1lbnRv" data-listing-title-sort="Vahlhalla App- [DEMO]" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://valhalla.openstreetmap.de/" class="title listing-title">Vahlhalla App- [DEMO]</a>
+</td>
+<td>
+<span class="listing-description">App que utiliza a API do motor de roteamento Valhalla (utiliza a informação do OpenStreetMap).</span>
+</td>
+<td>
+<span class="listing-categories">DEMO, Ferramenta, Roteamento</span>
+</td>
+
+</tr>
+
+<tr data-index="8" data-categories="REVNTyUyQ0ludmVzdGlnYSVDMyVBNyVDMyVBM28lMkNNYXBhcyUyQ0FsZ29yaXRtbw==" data-listing-title-sort="LOOM [DEMO]" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://loom.cs.uni-freiburg.de/" class="title listing-title">LOOM [DEMO]</a>
+</td>
+<td>
+<span class="listing-description">Demonstração de algoritmo de desenho automático de mapas de redes de transportes</span>
+</td>
+<td>
+<span class="listing-categories">DEMO, Investigação, Mapas, Algoritmo</span>
+</td>
+
+</tr>
+
+<tr data-index="9" data-categories="R1RGUyUyQ1Zpc3VhbGl6YWRvciUyQ0RFTU8=" data-listing-title-sort="Travic [DEMO]" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://travic.app/" class="title listing-title">Travic [DEMO]</a>
+</td>
+<td>
+<span class="listing-description">App que permite visualizar no mapa a localização (real ou teórica) de viaturas com base em feeds de GTFS.</span>
+</td>
+<td>
+<span class="listing-categories">GTFS, Visualizador, DEMO</span>
+</td>
+
+</tr>
+
+<tr data-index="10" data-categories="R1RGUyUyQ0RhZG9z" data-listing-title-sort="Transitous.org" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://transitous.org/" class="title listing-title">Transitous.org</a>
+</td>
+<td>
+<span class="listing-description">Agregador de feeds GTFS independente. Contém feeds de Portugal</span>
+</td>
+<td>
+<span class="listing-categories">GTFS, Dados</span>
+</td>
+
+</tr>
+
+<tr data-index="11" data-categories="R1RGUyUyQ1Zpc3VhbGl6YWRvciUyQ1JvdGVhbWVudG8lMkNERU1P" data-listing-title-sort="Planet.motis-project.org [DEMO]" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="https://planet.motis-project.org/" class="title listing-title">Planet.motis-project.org [DEMO]</a>
+</td>
+<td>
+<span class="listing-description">Planeador de viagem em transporte público (utiliza os dados do Transitous)</span>
+</td>
+<td>
+<span class="listing-categories">GTFS, Visualizador, Roteamento, DEMO</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">Nenhum item correspondente</div>
+<nav id="atalhos-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div>
+</div>
+<hr>
+<a href="https://sbat13.github.io/">Pausa Técnica</a> <!-- _share-links.qmd -->
+<div class="social-share" style="display: flex; gap: 10px;">
+<p><a href="#" data-sharer="linkedin" title="Partilhar no LinkedIn"><i class="fa-brands fa-linkedin" aria-label="linkedin"></i></a> <a href="#" data-sharer="whatsapp" title="Partilhar por WhatsApp"><i class="fa-brands fa-whatsapp" aria-label="whatsapp"></i></a> <a href="#" data-sharer="email" title="Partilhar por Email"><i class="fa-solid fa-envelope" aria-label="envelope"></i></a></p>
+</div>
+<script src="../sharer.core.js"></script>
+<script src="../services/linkedin.js"></script>
+<script src="../services/whatsapp.js"></script>
+<script src="../services/email.js"></script>
+<script>
+  Sharer.init(); // ensure click listeners are attached
+</script>
+
 
 
 
