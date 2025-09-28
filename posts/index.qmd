@@ -9,6 +9,7 @@ listing:
     sort: "date desc"
     type: grid
     fields: [image,date, title, subtitle, categories, reading-time]
+    date-format: iso
     field-display-names: 
       date: "**Data**"
       title: "**Título**"

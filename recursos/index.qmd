@@ -1,16 +1,28 @@
 ---
 lang: pt
 title: "Recursos úteis"
-#listing:
-#  - id: atalhos
-#    contents:
-#        - recursos/livros.yaml
-#        - recursos/software.yaml
-#        - recursos/paginas.yaml
-#    type: table
-#    fields: [title,description,categories]
+listing:
+  - id: atalhos
+    contents: paginas.yaml
+    type: table
+    fields: [title, description, categories]
+    categories: cloud
+    table-hover: true
+    table-striped: true
+    page-size: 5
+toc: false
 ---
 
 Compilação de links úteis, desde ferramentas online, páginas de referência, etc...
-
 🔗📚🛠️
+<div style="font-size: 0.85rem;">
+:::{#atalhos}
+:::
+</div>
+
+
+
+
+------------------------------------------------------------------------
+[Pausa Técnica](https://sbat13.github.io/)
+{{< include "/_share-links.qmd" >}}

@@ -1,0 +1,12 @@
+{
+  "hash": "8698378f2f0f18a838706c2efb9ea4aa",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\nlang: pt\ntitle: \"Recursos úteis\"\nlisting:\n  - id: atalhos\n    contents: paginas.yaml\n    type: table\n    fields: [title, description, categories]\n    categories: cloud\n    table-hover: true\n    table-striped: true\n    page-size: 5\ntoc: false\n---\n\nCompilação de links úteis, desde ferramentas online, páginas de referência, etc...\n🔗📚🛠️\n<div style=\"font-size: 0.85rem;\">\n:::{#atalhos}\n:::\n</div>\n\n\n\n\n------------------------------------------------------------------------\n[Pausa Técnica](https://sbat13.github.io/)\n<!-- _share-links.qmd -->\n<div class=\"social-share\" style=\"display: flex; gap: 10px;\">\n  <a href=\"#\" data-sharer=\"linkedin\" title=\"Partilhar no LinkedIn\">{{< fa brands linkedin >}}</a>\n  <a href=\"#\" data-sharer=\"whatsapp\" title=\"Partilhar por WhatsApp\">{{< fa brands whatsapp >}}</a>\n  <a href=\"#\" data-sharer=\"email\" title=\"Partilhar por Email\">{{< fa envelope >}}</a>\n</div>\n<script src=\"/sharer.core.js\"></script>\n<script src=\"/services/linkedin.js\"></script>\n<script src=\"/services/whatsapp.js\"></script>\n<script src=\"/services/email.js\"></script>\n<script>\n  Sharer.init(); // ensure click listeners are attached\n</script>\n\n\n```{html}\n<div class=\"fa-3x\">\n  <i class=\"fa-solid fa-sync fa-spin\"></i>\n  <i class=\"fa-solid fa-circle-notch fa-spin\"></i>\n  <i class=\"fa-solid fa-cog fa-spin\"></i>\n  <i class=\"fa-solid fa-cog fa-spin fa-spin-reverse\"></i>\n  <i class=\"fa-solid fa-spinner fa-spin-pulse\"></i>\n  <i class=\"fa-solid fa-spinner fa-spin-pulse fa-spin-reverse\"></i>\n</div>\n```\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

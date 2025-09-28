@@ -1,5 +1,61 @@
-- title: "Website 1"
-  date: 2025-09-17
-  description: ""
-  path: "https://www.google.com"
-  categories: [website]
+- title: "MobilityData.org"
+  description: "Esta organização dedica-se à governância dos standards da indústria em matéria de dados, GTFS, GBFS, TODS, TIDES. O Site tem muita informação, destaco os roadmaps que permitem antecipar as alterações previstas nos standards"
+  path: "https://mobilitydata.org/"
+  categories: [GTFS, GBFS, TODS, TIDES]
+
+- title: "GTFS.org"
+  description: "Documentação detalhada do standard GTFS, exemplos, boas práticas."
+  path: "https://gtfs.org/"
+  categories: [GTFS, Documentação]
+
+- title: "Canonical GTFS Schedule Validator"
+  description: "Validador de feeds GTFS online "
+  path: "https://gtfs-validator.mobilitydata.org/"
+  categories: [GTFS, Ferramenta]
+
+- title: "Mobility Database"
+  description: "Uma das maiores fontes de feeds GTFS, GTFS-RT e GBFS, incluindo Portugal"
+  path: "https://mobilitydatabase.org/"
+  categories: [GTFS, GBFS, Dados]
+
+- title: "GBFS Validator/ Visualizer"
+  description: "Validador de feeds GBFS online, permite a visualização da informação do sistema (Tarifas, Estações, vehículos, Estado da bateria, etc)"
+  path: "https://gbfs-validator.mobilitydata.org/"
+  categories: [GBFS, Ferramenta, Visualizador]
+
+- title: "OpenStreetMap"
+  description: "Alternativa opensource ao Google Maps. A informação é atualizada pela comunidade."
+  path: "https://www.openstreetmap.org/"
+  categories: [Ferramenta, Mapas]
+
+- title: "OpenRouteService"
+  description: "Alternativa open source ao Google directions. Utiliza a informação do OpenStreetmap."
+  path: "https://openrouteservice.org/"
+  categories: [Ferramenta, Roteamento]
+
+- title: "Vahlhalla App- [DEMO]"
+  description: "App que utiliza a API do motor de roteamento Valhalla (utiliza a informação do OpenStreetMap)."
+  path: "https://valhalla.openstreetmap.de/"
+  categories: [DEMO, Ferramenta, Roteamento]
+
+- title: "LOOM [DEMO]"
+  description: "Demonstração de algoritmo de desenho automático de mapas de redes de transportes"
+  path: "https://loom.cs.uni-freiburg.de/"
+  categories: [DEMO, Investigação, Mapas, Algoritmo]
+
+- title: "Travic [DEMO]"
+  description: "App que permite visualizar no mapa a localização (real ou teórica) de viaturas com base em feeds de GTFS."
+  path: "https://travic.app/"
+  categories: [GTFS, Visualizador, DEMO]
+
+- title: "Transitous.org"
+  description: "Agregador de feeds GTFS independente. Contém feeds de Portugal"
+  path: "https://transitous.org/"
+  categories: [GTFS, Dados]
+
+- title: "Planet.motis-project.org [DEMO]"
+  description: "Planeador de viagem em transporte público (utiliza os dados do Transitous)"
+  path: "https://planet.motis-project.org/"
+  categories: [GTFS, Visualizador, Roteamento, DEMO]
+
+

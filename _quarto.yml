@@ -12,7 +12,7 @@ execute:
 
 website:
   title: "Pausa Técnica"
-  favicon: "logo.png"
+  favicon: "icon.png"
   site-url: "https://sbat13.github.io"
   image: "logo.png"
   open-graph:
@@ -21,14 +21,14 @@ website:
 
   announcement:
     icon: rocket-takeoff-fill
-    dismissable: true
+    dismissable: false
     content: "**LIVE** - Lançamento do website!!!"
     type: primary
     position: below-navbar 
 
   cookie-consent:
     type: implied
-    style: interstitial
+    style: simple
     language: pt
     prefs-text: 🍪Cookies
   search:
@@ -52,11 +52,11 @@ website:
 
   sidebar:
     style: docked
-    logo: logo.png
-    background: white
+    logo: logo-nobg.png
+    #background: white
     contents:
       - text: Sobre
-        href: pausa.qmd
+        href: index.qmd
       - text: Blog
         href: posts/index.qmd
       - text: Recursos
@@ -79,9 +79,10 @@ format:
   html:
     canonical-url: true
     embed-resources: false
-    theme: 
-      light: flatly
-      #dark: darkly
+    theme: flatly
+      #light: journal
+      #dark: pulse
+      
     css: [mermaid-colors.css]
     toc: true
 

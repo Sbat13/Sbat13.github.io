@@ -7,7 +7,7 @@ lang: pt
 open-graph:
   description: "Lançamento do blog dedicado à mobilidade em Portugal"
   image: images/rsz_2logo.png
-  image-width: 200
+  image-width: 100
   type: article
 toc: true
 categories: 
@@ -53,7 +53,7 @@ Ao contrário de um livro, um blog não precisa ter todo o seu conteúdo criado 
 
 Não sei qual será a recetividade que o blog terá. Parto nesta aventura sem expetativas, o meu objetivo é a viagem.
 
-Na pior das hipóteses terei os meus apontamentos organizados e à distância de um clique.
+Na pior das hipóteses, terei os meus apontamentos organizados e à distância de um clique.
 
 ## Tecnologia e transparência
 
