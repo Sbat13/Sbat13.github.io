@@ -79,9 +79,9 @@ format:
   html:
     canonical-url: true
     embed-resources: false
-    theme: flatly
-      #light: journal
-      #dark: pulse
+    theme: journal
+      #light: flatly
+      #dark: sketchy
       
     css: [mermaid-colors.css]
     toc: true
