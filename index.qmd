@@ -1,7 +1,7 @@
 ---
 lang: pt
 open-graph:
-  description: "Blog técnico dedicado à mobilidade em Portugal"
+  description: "Blog técnico dedicado à mobilidade em Portugal. Abordagem pragmática sobre os detalhes que fazem todaa a diferença."
   type: website
 ---
 

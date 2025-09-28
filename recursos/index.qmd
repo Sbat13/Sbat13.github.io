@@ -12,7 +12,7 @@ listing:
     page-size: 5
 toc: false
 open-graph:
-  description: "Lista de links de sites úteis para profissionais de Transportes"
+  description: "Lista de links úteis para profissionais de Transportes. Validadores para GTFS, visualizadores, bases de dados de GTFS, API's, especificações técnicas..."
   type: article
 ---
 
