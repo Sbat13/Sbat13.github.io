@@ -12,7 +12,7 @@ execute:
 
 website:
   title: "Pausa Técnica"
-  favicon: "icon.png"
+  favicon: "favicon.png"
   site-url: "https://sbat13.github.io"
   image: "logo.png"
   open-graph:
