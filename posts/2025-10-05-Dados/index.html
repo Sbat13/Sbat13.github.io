@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Dados em Transportes – Pausa Técnica</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-e1a348d7687e34d62e824fa0611af390.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e1a348d7687e34d62e824fa0611af390.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-e1a348d7687e34d62e824fa0611af390.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"implied",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"pt"
+  });
+});
+</script> 
+  
+
+
+<link rel="stylesheet" href="../../mermaid-colors.css">
+<meta property="og:title" content="Dados em Transportes – Pausa Técnica">
+<meta property="og:description" content="Descarbonização, digitalização, inteligência artificial, contratualização, profissionalização e descentralização das autoridades são exemplos conhecidos de transformações em curso no setor dos transportes. No entanto longe dos holofotes está, aquilo a que chamo Revolução silenciosa. Emerge um novo paradigma na relação do setor com os dados, desde o seu registo à sua utilização. É precisamente sobre isso que se debruça este artigo.">
+<meta property="og:image" content="https://sbat13.github.io/posts/2025-10-05-Dados/images/featured_image.jpg">
+<meta property="og:site_name" content="Pausa Técnica">
+<meta property="og:locale" content="pt_PT">
+<link rel="canonical" href="https://sbat13.github.io/posts/2025-10-05-Dados/">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Dados em Transportes</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+  <div id="quarto-announcement" data-announcement-id="386b8dd7d457f2778366d0289efc4084" class="alert alert-primary hidden"><i class="bi bi-rocket-takeoff-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><strong>LIVE</strong> - Lançamento do website!!!</p>
+</div></div>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../logo-nobg.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../logo-nobg.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <div id="quarto-search" class="quarto-navigation-tool px-1" title="Procurar"></div>
+</div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sobre</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Blog</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../recursos/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Recursos</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#transformação-dos-transportesrodoviários-em-portugal" id="toc-transformação-dos-transportesrodoviários-em-portugal" class="nav-link active" data-scroll-target="#transformação-dos-transportesrodoviários-em-portugal">Transformação dos transportes(rodoviários) em Portugal</a>
+  <ul class="collapse">
+  <li><a href="#a-imagem-tecnológica-dos-transportes" id="toc-a-imagem-tecnológica-dos-transportes" class="nav-link" data-scroll-target="#a-imagem-tecnológica-dos-transportes">A imagem tecnológica dos transportes</a></li>
+  <li><a href="#o-que-faz-a-tecnologia-funcionar" id="toc-o-que-faz-a-tecnologia-funcionar" class="nav-link" data-scroll-target="#o-que-faz-a-tecnologia-funcionar">O que faz a tecnologia funcionar?</a></li>
+  <li><a href="#a-revolução-silenciosa" id="toc-a-revolução-silenciosa" class="nav-link" data-scroll-target="#a-revolução-silenciosa">A revolução silenciosa</a></li>
+  <li><a href="#o-exemplo-das-paragens" id="toc-o-exemplo-das-paragens" class="nav-link" data-scroll-target="#o-exemplo-das-paragens">O exemplo das paragens</a>
+  <ul class="collapse">
+  <li><a href="#problema" id="toc-problema" class="nav-link" data-scroll-target="#problema">Problema</a></li>
+  <li><a href="#solução" id="toc-solução" class="nav-link" data-scroll-target="#solução">Solução</a></li>
+  <li><a href="#implicações" id="toc-implicações" class="nav-link" data-scroll-target="#implicações">Implicações</a></li>
+  </ul></li>
+  <li><a href="#mas-não-fica-por-aqui" id="toc-mas-não-fica-por-aqui" class="nav-link" data-scroll-target="#mas-não-fica-por-aqui">Mas não fica por aqui</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Dados em Transportes</h1>
+<p class="subtitle lead">A revolução silenciosa</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Mobilidade</div>
+    <div class="quarto-category">Transformação</div>
+    <div class="quarto-category">Dados</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">5 de outubro de 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="transformação-dos-transportesrodoviários-em-portugal" class="level1">
+<h1>Transformação dos transportes(rodoviários) em Portugal</h1>
+<div class="quarto-layout-panel" data-layout="[70,30]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
+<p>O setor dos transportes em Portugal está sofrer uma transformação radical. Enquanto noutros paises se sucederam multiplas transformações nas últimas décadas, em Portugal as mudanças foram bastante contidas.</p>
+<p>A liberalização do mercado, a alteração profunda do regime contratual, a criação de autoridades de transporte, a descarbonização, a digitalização são tudo exemplos de transformações em curso que fazem deste momento particular da história dos transportes em Portugal um momento tão crucial.</p>
+<p>Neste artigo vou-me focar na tecnologia e a forma como, enquanto cidadãos, nos relacionamos com ela.</p>
+<p>A velocidade com que a tecnologia evolui e se dissemina e a natural abertura ao mundo de Portugal e dos Portugueses, leva a que haja um claro desfasamento entre as expectativas crescentes de uma sociedade moderna e a forma como os serviços (neste caso mobilidade) lhe são prestados.</p>
+<p>O diagnóstico fácil mas também errado (por ser demasiado simplista) é de que há um fosso tecnológico.</p>
+<p>Depois de pensar no assunto, conclui que não será bem assim…</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/featured_image.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Photo by David Preston on Unsplash"><img src="images/featured_image.jpg" class="preview-image img-fluid figure-img" width="300" alt="Photo by David Preston on Unsplash"></a></p>
+<figcaption>Photo by <a href="https://unsplash.com/@thewzrdharry?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">David Preston</a> on <a href="https://unsplash.com/photos/space-gray-aluminum-case-apple-watch-and-black-leather-band-turned-on-zhnvtl5xQgk?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="a-imagem-tecnológica-dos-transportes" class="level2">
+<h2 class="anchored" data-anchor-id="a-imagem-tecnológica-dos-transportes">A imagem tecnológica dos transportes</h2>
+<p>Existe a percepção generalizada de que é um setor ultrapassado. Quem está “por dentro” sabe que o que existe é todo um iceberg submerso repleto de tecnologia e avanços que ainda não está à vista na prestação dos serviços de mobilidade. Não sendo a mesma coisa, o seu efeito prático é o mesmo. Desde o tracking em tempo real, desmaterialização de bilhética, sistemas de eficiência energética, sistemas de segurança avançados, algoritmos de optimização, sensores, telemetria, a lista é gigante e com tendência a aumentar. Tal como um smartphone que também dá para telefonar, a componente puramente mecânica das viaturas é cada vez mais “secundarizada” dada a predominância da eletrónica.</p>
+<p>O transporte público rodoviário tem características muito singulares face a outros modos, em particular no que diz respeito ao planeamento apresentando-se como uma solução mais fléxivel e versátil. Esta flexibilidade de operacionalização é, ao mesmo tempo uma virtude e uma maldição, se é facilmente entendido que, pelo menos no curto prazo, uma linha de autocarro pode chegar onde um comboio/metro não pode para dar resposta de mobilidade a uma nova dinâmica (entenda-se necessidade de transporte), não é tão bem percebido ou aceite que essas mesmas alterações provocam uma instabilidade na rede de serviços e afetam os utilizadores. Há a tentação de chegar a todo o lado ainda que isso venha com a degradação da competitividade do transporte público (mas isso é outro assunto que merece uma reflexão própria, <strong>o que é uma boa rede de transporte?</strong>).</p>
+</section>
+<section id="o-que-faz-a-tecnologia-funcionar" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-faz-a-tecnologia-funcionar">O que faz a tecnologia funcionar?</h2>
+<p>A suportar todos os estes sistemas há um elemento comum e crítico neste processo - <strong>Dados</strong>. A tecnologia só funciona quando os dados são fiáveis, consistentes, acessiveis e robustos. Para que tal acontece há muito trabalho invisivel que tem de acontecer.</p>
+<p>Nos transportes, e no caso concreto de Portugal eram utilizados modelos de dados de forma avulsa e personalizada, ou seja, a forma como os dados eram representados e armazenados nos diferentes sistemas não oferecia consistência, os próprios conceitos e designações diferiam. Perguntas aparentemente simples como “O que é uma linha?” ou “Como são representadas as paragens?” não tinham (e ainda não têm) resposta única.</p>
+<p>Este problema de falta de <strong>standards</strong> não é exclusivo a Portugal e foi algo identificado quer pela união europeia (desenvolvimento do <strong>NeTEx - Network Timetable Exchange format</strong>) quer pelas grandes tecnológicas (Com a Google a dar o empurrão inicial criando o <strong>GTFS - General Transport Feed Specification</strong>).</p>
+<p>O NeTEx, foi desenvolvido pelo Comité Europeu de Normalização, é um standard muito complexo, hierárquico, extenso e de dificil implementação e de ambito estritamente europeu. Em contraponto o GTFS foi a resposta das tecnológicas, que se preocuparam muito mais em dar alguma estrutura à informação existente sendo menos exigente a favor de uma universalidade e facilidade de uso.</p>
+<p>As diferentes barreiras de adopção colocadas pelo NeTEx (necessária licença para usar o standard, dificuldade de implementação, uso limitado à Europa) levaram a que as tecnológicas (na sua maioria não europeias) optassem pelo standard GTFS nas soluções tecnológicas de transportes, passando a ser o standard “de facto” mundial e que permitiu “trazer” para um standard todo o tipo de realidades, mais ou menos estruturadas e com modelos conceptuais completamente distintos.</p>
+</section>
+<section id="a-revolução-silenciosa" class="level2">
+<h2 class="anchored" data-anchor-id="a-revolução-silenciosa">A revolução silenciosa</h2>
+<p>Com a utilização crescente da especificação GTFS (essencial para alimentar de forma consistente a “stack” tecnológica), fica evidente (ainda mais no caso do GTFS), que um standard só por si, não é suficiente. Há também questões de governança da informação que têm de ser endereçadas e resolvidas.</p>
+<p>É esta transformação de paradigma invisivel que denomino de <strong>revolução silenciosa</strong>. É esta standardização e modelo de governança que vai permitir a percepção pública do salto qualitativo que o setor está a realizar.</p>
+<p>Até agora apenas falei de generalidades mas é preciso ir ao detalhe e a casos concretos para não ficarmos somente pelas boas intenções.</p>
+</section>
+<section id="o-exemplo-das-paragens" class="level2">
+<h2 class="anchored" data-anchor-id="o-exemplo-das-paragens">O exemplo das paragens</h2>
+<section id="problema" class="level3">
+<h3 class="anchored" data-anchor-id="problema">Problema</h3>
+<p>As paragens são elemento base da rede de transportes. Cada paragem, tem associada um conjunto vasto de informação, desde o seu código, nome, coordenadas, infraestrutura (se tem abrigo, , acesso PMR, qual a capacidade, publicidade, paineis informativos, iluminação, bancos), registos de limpeza, registos de manutenção, zona tarifária, linhas servidas, horários de passagem, etc)</p>
+<p>Claramente temos vários tipos de informação, focando-nos unicamente nos básicos como o código, nome e coordenadas o que deveria ser simples, na prática não o é. Como cada autoridade de transporte e consequentemente cada rede é codificada de forma independente, a mesma paragem pode ter códigos diferentes nas duas redes, mas o caso pode ainda ser mais caricato, como a competência pela infraestrutura na via pública cabe ao município (normalmente parte integrante de uma autoridade de transporte) onde fisicamente o equipamento instalado, ele pode ser deslocado, alterando as suas coordenadas (muitas vezes necessário por intervenções na via).</p>
+<p>Se fosse transporte aéreo, isto seria o equivalente a alterar o código IATA dos aeroportos portugueses e informar somente o operador interno da alteração e esperar que os voos internacionais resolvessem o problema por si. Posso adiantar com certeza que estariamos anos à procura das bagagens…</p>
+<p>Se no transporte aéreo é evidente a necessidade de uma base de códigos comuns, no transporte rodoviário ainda não está resolvido e há problemas diários relacionados por todo o pais.</p>
+</section>
+<section id="solução" class="level3">
+<h3 class="anchored" data-anchor-id="solução">Solução</h3>
+<p>A solução parece simples, um sistema de codificação nacional associado a um modelo claro de governança.</p>
+<p><em>Ok, mas construir uma base de dados com o levantamento de todas as paragens do território não é fácil nem se faz rapidamente.</em></p>
+<p>Se calhar é mais fácil do que imaginamos…</p>
+<p>Vejamos, apenas queremos garantir um código único por paragem em todo o território. Não queremos a mesma paragem com vários códigos nem queremos o mesmo código em várias paragens.</p>
+<p>A solução natural seria usar os códigos da Carta Administrativa Oficial de Portugal CAOP 2024, que aliás tem um repositório aberto no <a href="https://github.com/dgterritorio/CAOP" target="_blank" rel="noopener noreferrer">GitHub</a>, no entanto estes códigos são compostos por 2 digitos para o distrito, dois dígitos para o municipio e 2 digitos para a freguesia, ou seja um código totalmente numérico de 6 digitos… Embora isso funcionasse sem problemas para os sistemas, não o é muito amigável para os humanos.</p>
+<p>Lembrei-me de uma codificação antiga, muito mais apelativa mas que deixei de ver. Quando existiam as licenças camarárias, as bicicletas tinham um código de 3 letras que identificavam inequivocamente o município, investiguei e depois de contactar a Torre do Tombo (sim, foi onde me levou esta pesquisa) fiquei esclarecido, não só é viável como é apropriado. A codificação dos municípios ainda é utilizada, por exemplo os contadores de eletricidade ou de gás usam esta codificação, além disso é utilizada pela DGLAB que sucedeu à ex-DGARQ (Direção-Geral de Arquivos) e ainda na documentação interna de muitos dos municípios.</p>
+<p>Resumindo, para as paragens, cada município deveria usar o código de 3 letras <a href="https://pt.wikipedia.org/wiki/Lista_de_munic%C3%ADpios_de_Portugal" target="_blank" rel="noopener noreferrer">Wikipedia</a> seguido de um número de 4 dígitos e ser responsável por manter o inventário e informação associada incluindo as redes de transporte que as utilizam. Dessa forma, seria possível antecipar quais as redes afetadas aquando de uma alteração a uma paragem. Ora como cada município já tem o inventário das suas infraestruturas, rapidamente se poderia obter a lista completa de todas as paragens de Portugal. As autoridades de transporte, por seu lado, deveriam usar a codificação definida pelo território e não criar uma nova codificação por rede.</p>
+</section>
+<section id="implicações" class="level3">
+<h3 class="anchored" data-anchor-id="implicações">Implicações</h3>
+<p>Nenhuma destas sugestões implica alterações às competências de cada entidade, nem a necessidade de trabalho adicional.</p>
+<p>Com esta sugestão, seja qual for a rede que utilize uma paragem, a paragem tem sempre o mesmo código, também não há códigos repetidos seja qual for a rede, todos os atores têm visibilidade das implicações das suas ações, a governança/responsabilidade fica claramente definida.</p>
+<p>Com este pequeno passo, a informação de diferentes redes passa a ser compatível. Esta compatibilidade abre ínumeras possibilidades, desde planeadores de viagem usando diferentes redes, melhor informação ao público, possibilidade de integração tarifária, etc…</p>
+</section>
+</section>
+<section id="mas-não-fica-por-aqui" class="level2">
+<h2 class="anchored" data-anchor-id="mas-não-fica-por-aqui">Mas não fica por aqui</h2>
+<p>Neste artigo, o exemplo que escolhi limitou-se somente aos códigos das paragens por ser tão grande o benefício face ao esforço necessário. Garanto que há ainda muito mais a ser feito em relação às paragens. Uniformização de nomes, hierarquia em função da via, certificação PMR só para mencionar alguns pontos.</p>
+<hr>
+<p><a href="https://sbat13.github.io/">Pausa Técnica</a></p>
+<!-- _share-links.qmd -->
+<div class="social-share" style="display: flex; gap: 20px;">
+<p><a href="#" data-sharer="linkedin" title="Partilhar no LinkedIn"><i class="fa-brands fa-linkedin" aria-label="linkedin"></i></a> <a href="#" data-sharer="whatsapp" title="Partilhar por WhatsApp"><i class="fa-brands fa-whatsapp" aria-label="whatsapp"></i></a> <a href="#" data-sharer="email" title="Partilhar por Email"><i class="fa-solid fa-envelope" aria-label="envelope"></i></a></p>
+</div>
+<script src="../../sharer.core.js"></script>
+<script src="../../services/linkedin.js"></script>
+<script src="../../services/whatsapp.js"></script>
+<script src="../../services/email.js"></script>
+<script>
+  Sharer.init(); // ensure click listeners are attached
+</script>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/sbat13\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Made with ♥️ &amp; <a href="https://quarto.org">Quarto</a></p>
+</div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">🍪Cookies</a></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © 2025
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Sbat13" target="_blank">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/sfbatista/" target="_blank">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:sbat13@yahoo.com">
+      <i class="bi bi-envelope-at-fill" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>
