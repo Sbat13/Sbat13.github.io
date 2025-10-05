@@ -1,0 +1,119 @@
+---
+date: "2025-10-05"
+title: "Dados em Transportes"
+subtitle: "A revolução silenciosa"
+image: images/featured_image.jpg
+lang: pt
+open-graph:
+  description: "Descarbonização, digitalização, inteligência artificial, contratualização, profissionalização e descentralização das autoridades são exemplos conhecidos de transformações em curso no setor dos transportes. No entanto longe dos holofotes está, aquilo a que chamo **Revolução silenciosa**. Emerge um novo paradigma na relação do setor com os dados, desde o seu registo à sua utilização. É precisamente sobre isso que se debruça este artigo."
+  image: images/featured_image.jpg
+  image-width: 100
+  type: article
+toc: true
+categories: 
+  - "Mobilidade"
+  - "Transformação"
+  - "Dados"
+format:
+  html: default
+  #pdf:
+  #  toc: false
+  #  documentclass: scrartcl
+  #  output-file: "20251005_PT_Dados.pdf"
+---
+
+# Transformação dos transportes(rodoviários) em Portugal
+
+::::: {layout="[70,30]"}
+<div>
+
+O setor dos transportes em Portugal está sofrer uma transformação radical. Enquanto noutros paises se sucederam multiplas transformações nas últimas décadas, em Portugal as mudanças foram bastante contidas.
+
+A liberalização do mercado, a alteração profunda do regime contratual, a criação de autoridades de transporte, a descarbonização, a digitalização são tudo exemplos de transformações em curso que fazem deste momento particular da história dos transportes em Portugal um momento tão crucial.
+
+Neste artigo vou-me focar na tecnologia e a forma como, enquanto cidadãos, nos relacionamos com ela.
+
+A velocidade com que a tecnologia evolui e se dissemina e a natural abertura ao mundo de Portugal e dos Portugueses, leva a que haja um claro desfasamento entre as expectativas crescentes de uma sociedade moderna e a forma como os serviços (neste caso mobilidade) lhe são prestados.
+
+O diagnóstico fácil mas também errado (por ser demasiado simplista) é de que há um fosso tecnológico.
+
+Depois de pensar no assunto, conclui que não será bem assim...
+
+</div>
+
+::: {#second-column}
+![Photo by <a href="https://unsplash.com/@thewzrdharry?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">David Preston</a> on <a href="https://unsplash.com/photos/space-gray-aluminum-case-apple-watch-and-black-leather-band-turned-on-zhnvtl5xQgk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>](images/featured_image.jpg){.preview-image .lightbox width="300"}
+:::
+:::::
+
+## A imagem tecnológica dos transportes
+
+Existe a percepção generalizada de que é um setor ultrapassado. Quem está "por dentro" sabe que o que existe é todo um iceberg submerso repleto de tecnologia e avanços que ainda não está à vista na prestação dos serviços de mobilidade. Não sendo a mesma coisa, o seu efeito prático é o mesmo. Desde o tracking em tempo real, desmaterialização de bilhética, sistemas de eficiência energética, sistemas de segurança avançados, algoritmos de optimização, sensores, telemetria, a lista é gigante e com tendência a aumentar. Tal como um smartphone que também dá para telefonar, a componente puramente mecânica das viaturas é cada vez mais "secundarizada" dada a predominância da eletrónica.
+
+O transporte público rodoviário tem características muito singulares face a outros modos, em particular no que diz respeito ao planeamento apresentando-se como uma solução mais fléxivel e versátil. Esta flexibilidade de operacionalização é, ao mesmo tempo uma virtude e uma maldição, se é facilmente entendido que, pelo menos no curto prazo, uma linha de autocarro pode chegar onde um comboio/metro não pode para dar resposta de mobilidade a uma nova dinâmica (entenda-se necessidade de transporte), não é tão bem percebido ou aceite que essas mesmas alterações provocam uma instabilidade na rede de serviços e afetam os utilizadores. Há a tentação de chegar a todo o lado ainda que isso venha com a degradação da competitividade do transporte público (mas isso é outro assunto que merece uma reflexão própria, **o que é uma boa rede de transporte?**).
+
+## O que faz a tecnologia funcionar?
+
+A suportar todos os estes sistemas há um elemento comum e crítico neste processo - **Dados**. A tecnologia só funciona quando os dados são fiáveis, consistentes, acessiveis e robustos. Para que tal acontece há muito trabalho invisivel que tem de acontecer.
+
+Nos transportes, e no caso concreto de Portugal eram utilizados modelos de dados de forma avulsa e personalizada, ou seja, a forma como os dados eram representados e armazenados nos diferentes sistemas não oferecia consistência, os próprios conceitos e designações diferiam. Perguntas aparentemente simples como "O que é uma linha?" ou "Como são representadas as paragens?" não tinham (e ainda não têm) resposta única.
+
+Este problema de falta de **standards** não é exclusivo a Portugal e foi algo identificado quer pela união europeia (desenvolvimento do **NeTEx - Network Timetable Exchange format**) quer pelas grandes tecnológicas (Com a Google a dar o empurrão inicial criando o **GTFS - General Transport Feed Specification**).
+
+O NeTEx, foi desenvolvido pelo Comité Europeu de Normalização, é um standard muito complexo, hierárquico, extenso e de dificil implementação e de ambito estritamente europeu. Em contraponto o GTFS foi a resposta das tecnológicas, que se preocuparam muito mais em dar alguma estrutura à informação existente sendo menos exigente a favor de uma universalidade e facilidade de uso.
+
+As diferentes barreiras de adopção colocadas pelo NeTEx (necessária licença para usar o standard, dificuldade de implementação, uso limitado à Europa) levaram a que as tecnológicas (na sua maioria não europeias) optassem pelo standard GTFS nas soluções tecnológicas de transportes, passando a ser o standard "de facto" mundial e que permitiu "trazer" para um standard todo o tipo de realidades, mais ou menos estruturadas e com modelos conceptuais completamente distintos.
+
+## A revolução silenciosa
+
+Com a utilização crescente da especificação GTFS (essencial para alimentar de forma consistente a "stack" tecnológica), fica evidente (ainda mais no caso do GTFS), que um standard só por si, não é suficiente. Há também questões de governança da informação que têm de ser endereçadas e resolvidas.
+
+É esta transformação de paradigma invisivel que denomino de **revolução silenciosa**. É esta standardização e modelo de governança que vai permitir a percepção pública do salto qualitativo que o setor está a realizar.
+
+Até agora apenas falei de generalidades mas é preciso ir ao detalhe e a casos concretos para não ficarmos somente pelas boas intenções.
+
+## O exemplo das paragens
+
+### Problema
+
+As paragens são elemento base da rede de transportes. Cada paragem, tem associada um conjunto vasto de informação, desde o seu código, nome, coordenadas, infraestrutura (se tem abrigo, , acesso PMR, qual a capacidade, publicidade, paineis informativos, iluminação, bancos), registos de limpeza, registos de manutenção, zona tarifária, linhas servidas, horários de passagem, etc)
+
+Claramente temos vários tipos de informação, focando-nos unicamente nos básicos como o código, nome e coordenadas o que deveria ser simples, na prática não o é. Como cada autoridade de transporte e consequentemente cada rede é codificada de forma independente, a mesma paragem pode ter códigos diferentes nas duas redes, mas o caso pode ainda ser mais caricato, como a competência pela infraestrutura na via pública cabe ao município (normalmente parte integrante de uma autoridade de transporte) onde fisicamente o equipamento instalado, ele pode ser deslocado, alterando as suas coordenadas (muitas vezes necessário por intervenções na via).
+
+Se fosse transporte aéreo, isto seria o equivalente a alterar o código IATA dos aeroportos portugueses e informar somente o operador interno da alteração e esperar que os voos internacionais resolvessem o problema por si. Posso adiantar com certeza que estariamos anos à procura das bagagens...
+
+Se no transporte aéreo é evidente a necessidade de uma base de códigos comuns, no transporte rodoviário ainda não está resolvido e há problemas diários relacionados por todo o pais.
+
+### Solução
+
+A solução parece simples, um sistema de codificação nacional associado a um modelo claro de governança.
+
+*Ok, mas construir uma base de dados com o levantamento de todas as paragens do território não é fácil nem se faz rapidamente.*
+
+Se calhar é mais fácil do que imaginamos...
+
+Vejamos, apenas queremos garantir um código único por paragem em todo o território. Não queremos a mesma paragem com vários códigos nem queremos o mesmo código em várias paragens.
+
+A solução natural seria usar os códigos da Carta Administrativa Oficial de Portugal CAOP 2024, que aliás tem um repositório aberto no [GitHub](https://github.com/dgterritorio/CAOP){target="_blank" rel="noopener noreferrer"}, no entanto estes códigos são compostos por 2 digitos para o distrito, dois dígitos para o municipio e 2 digitos para a freguesia, ou seja um código totalmente numérico de 6 digitos... Embora isso funcionasse sem problemas para os sistemas, não o é muito amigável para os humanos.
+
+Lembrei-me de uma codificação antiga, muito mais apelativa mas que deixei de ver. Quando existiam as licenças camarárias, as bicicletas tinham um código de 3 letras que identificavam inequivocamente o município, investiguei e depois de contactar a Torre do Tombo (sim, foi onde me levou esta pesquisa) fiquei esclarecido, não só é viável como é apropriado. A codificação dos municípios ainda é utilizada, por exemplo os contadores de eletricidade ou de gás usam esta codificação, além disso é utilizada pela DGLAB que sucedeu à ex-DGARQ (Direção-Geral de Arquivos) e ainda na documentação interna de muitos dos municípios.
+
+Resumindo, para as paragens, cada município deveria usar o código de 3 letras [Wikipedia](https://pt.wikipedia.org/wiki/Lista_de_munic%C3%ADpios_de_Portugal){target="_blank" rel="noopener noreferrer"} seguido de um número de 4 dígitos e ser responsável por manter o inventário e informação associada incluindo as redes de transporte que as utilizam. Dessa forma, seria possível antecipar quais as redes afetadas aquando de uma alteração a uma paragem. Ora como cada município já tem o inventário das suas infraestruturas, rapidamente se poderia obter a lista completa de todas as paragens de Portugal. As autoridades de transporte, por seu lado, deveriam usar a codificação definida pelo território e não criar uma nova codificação por rede.
+
+### Implicações
+
+Nenhuma destas sugestões implica alterações às competências de cada entidade, nem a necessidade de trabalho adicional.
+
+Com esta sugestão, seja qual for a rede que utilize uma paragem, a paragem tem sempre o mesmo código, também não há códigos repetidos seja qual for a rede, todos os atores têm visibilidade das implicações das suas ações, a governança/responsabilidade fica claramente definida.
+
+Com este pequeno passo, a informação de diferentes redes passa a ser compatível. Esta compatibilidade abre ínumeras possibilidades, desde planeadores de viagem usando diferentes redes, melhor informação ao público, possibilidade de integração tarifária, etc...
+
+## Mas não fica por aqui
+
+Neste artigo, o exemplo que escolhi limitou-se somente aos códigos das paragens por ser tão grande o benefício face ao esforço necessário. Garanto que há ainda muito mais a ser feito em relação às paragens. Uniformização de nomes, hierarquia em função da via, certificação PMR só para mencionar alguns pontos.
+
+------------------------------------------------------------------------
+
+[Pausa Técnica](https://sbat13.github.io/)
+
+{{< include "/_share-links.qmd" >}}
