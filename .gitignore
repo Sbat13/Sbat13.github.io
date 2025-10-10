@@ -1,6 +1,8 @@
 # Python
 __pycache__/
 .venv/
+
+# My experiments
 .tests/
 
 # Quarto build
