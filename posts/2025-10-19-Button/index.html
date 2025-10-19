@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lançamento – Pausa Técnica</title>
+<title>O mito do botão mágico – Pausa Técnica</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,6 +50,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-d56992cc259955c096f0d896c7a5e127.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -97,14 +100,12 @@ cookieconsent.run({
 
 
 <link rel="stylesheet" href="../../mermaid-colors.css">
-<meta property="og:title" content="Lançamento – Pausa Técnica">
-<meta property="og:description" content="Lançamento do blog dedicado à mobilidade em Portugal">
-<meta property="og:image" content="https://sbat13.github.io/posts/2025-09-17-Fazer/images/rsz_2logo.png">
+<meta property="og:title" content="O mito do botão mágico – Pausa Técnica">
+<meta property="og:description" content="Os avanços tecnológicos criaram o mito de que todos os problemas podem ser facilmente resolvidos e a optimização de um plano de produção de transportes não é excepção. Afinal, o que é uma solução optima? Que tipo de problema é este?">
+<meta property="og:image" content="https://sbat13.github.io/posts/2025-10-19-Button/images/featured_image.jpg">
 <meta property="og:site_name" content="Pausa Técnica">
-<meta property="og:image:width" content="1760">
 <meta property="og:locale" content="pt_PT">
-<meta property="og:image:height" content="1784">
-<link rel="canonical" href="https://sbat13.github.io/posts/2025-09-17-Fazer/">
+<link rel="canonical" href="https://sbat13.github.io/posts/2025-10-19-Button/">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -116,7 +117,7 @@ cookieconsent.run({
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lançamento</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">O mito do botão mágico</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -171,9 +172,14 @@ cookieconsent.run({
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#como-surgiu-esta-ideia" id="toc-como-surgiu-esta-ideia" class="nav-link active" data-scroll-target="#como-surgiu-esta-ideia">Como surgiu esta ideia?</a></li>
-  <li><a href="#o-meu-blog-as-minhas-regras" id="toc-o-meu-blog-as-minhas-regras" class="nav-link" data-scroll-target="#o-meu-blog-as-minhas-regras">O meu blog, as minhas regras</a></li>
-  <li><a href="#tecnologia-e-transparência" id="toc-tecnologia-e-transparência" class="nav-link" data-scroll-target="#tecnologia-e-transparência">Tecnologia e transparência</a></li>
+  <li><a href="#o-problema-que-estamos-a-tentar-optimizar" id="toc-o-problema-que-estamos-a-tentar-optimizar" class="nav-link active" data-scroll-target="#o-problema-que-estamos-a-tentar-optimizar">O problema que estamos a tentar optimizar!!</a>
+  <ul class="collapse">
+  <li><a href="#o-que-significa-optimizar-neste-contexto" id="toc-o-que-significa-optimizar-neste-contexto" class="nav-link" data-scroll-target="#o-que-significa-optimizar-neste-contexto">O que significa optimizar neste contexto?</a></li>
+  <li><a href="#heurísticas---mais-simples-do-que-parecem" id="toc-heurísticas---mais-simples-do-que-parecem" class="nav-link" data-scroll-target="#heurísticas---mais-simples-do-que-parecem">Heurísticas - mais simples do que parecem</a></li>
+  <li><a href="#função-objectivo---estrutura-de-custos" id="toc-função-objectivo---estrutura-de-custos" class="nav-link" data-scroll-target="#função-objectivo---estrutura-de-custos">Função objectivo - Estrutura de custos</a></li>
+  <li><a href="#homem-vs-máquina" id="toc-homem-vs-máquina" class="nav-link" data-scroll-target="#homem-vs-máquina">Homem vs Máquina</a></li>
+  <li><a href="#mas-não-fica-por-aqui" id="toc-mas-não-fica-por-aqui" class="nav-link" data-scroll-target="#mas-não-fica-por-aqui">Mas não fica por aqui</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -182,11 +188,13 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lançamento</h1>
-<p class="subtitle lead">Parei, pensei e agi, desafio-te a fazer o mesmo</p>
+<h1 class="title">O mito do botão mágico</h1>
+<p class="subtitle lead">Os sistemas que resolvem tudo…</p>
   <div class="quarto-categories">
     <div class="quarto-category">Mobilidade</div>
-    <div class="quarto-category">Blog</div>
+    <div class="quarto-category">Mito</div>
+    <div class="quarto-category">Dados</div>
+    <div class="quarto-category">Algoritmos</div>
   </div>
   </div>
 
@@ -198,7 +206,7 @@ cookieconsent.run({
     <div>
     <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">21 de setembro de 2025</p>
+      <p class="date">19 de outubro de 2025</p>
     </div>
   </div>
   
@@ -210,41 +218,119 @@ cookieconsent.run({
 </header>
 
 
+<section id="o-problema-que-estamos-a-tentar-optimizar" class="level1">
+<h1>O problema que estamos a tentar optimizar!!</h1>
 <div class="quarto-layout-panel" data-layout="[70,30]">
 <div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
-<section id="lançamento" class="level1">
-<h1>Lançamento</h1>
-<p>Este não será certamente o artigo mais interessante do blog, mas é sem dúvida dos mais importantes. É o momento em que finalmente decidi agir.</p>
+<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
+<p><strong>Qual o plano de produção óptimo para produzir os serviços respeitando as regras especialmente as legais e laborais?</strong></p>
+<p>Para responder a esta questão é preciso entender a natureza do problema, o que significa optimizar e como os diferentes tipos de custos se relacionam.</p>
+<p>Este tipo de problemas é designado como um problema de combinatória e apresenta particularidades ocultas à primeira vista. Em termos simplistas, o que se pretende é alocar um conjunto de viagens a 2 recursos, a viatura e o motorista.</p>
+<p>Em problemas pequenos é possivel enumerar todas as possibilidades, no entanto, assim que o problema começa a crescer (mais viagens, mais motoristas, mais viaturas) esta abordagem deixa de ser viável precisamente por dispararem as combinações possíveis.</p>
+<p><strong>Ok, precisamos de uma capacidade de processamento maior!</strong></p>
+<p>Não, isso não resolve. A dimensão dos problemas de que estamos a falar atinge números astronómicos, para um problema de tamanho médio, há mais combinações possíveis do que grãos de areia no planeta!! Mesmo o computador mais potente com a possibilidade de enumerar milhares de combinações por segundo demoraria mais do que o tempo da humanidade. Mesmo que fosse possível duplicar a capacidade, demoraria metade do tempo da humanidade… continuaria a não ser muito útil.</p>
+<p>Em matemática estes problemas são designados por <strong>intratáveis</strong>!</p>
+<p>A resposta está em reduzir o espaço de procura (designado por espaço de soluções) utilizando algoritmos.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/featured_image.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Photo by Devang Saklani on Unsplash"><img src="images/featured_image.jpg" class="preview-image img-fluid figure-img" width="300" alt="Photo by Devang Saklani on Unsplash"></a></p>
+<figcaption>Photo by <a href="https://unsplash.com/@devang47?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Devang Saklani</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-keyboard-with-a-red-button-k50QmAXR9f8?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="o-que-significa-optimizar-neste-contexto" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-significa-optimizar-neste-contexto">O que significa optimizar neste contexto?</h2>
+<p>Uma afirmação legítima e recorrente é <strong>“como foi possivel obter uma solução melhor, não tinhamos optimizado?”</strong></p>
+<p>Pois… Não é fácil explicar isto de forma simples, há muitos pressupostos escondidos que têm de ser desconstruidos.</p>
+<p>Com o uso de algoritmos aproximados, nem sempre temos a garantia de que no final da optimização o resultado é o óptimo absoluto, ou seja, que não há nenhuma outra solução que seja melhor. O algoritmo não resolve o problema na sua totalidade, o que faz é procurar reduzir as combinações descartando aquelas que aparentemente são menos promissoras, formando um problema mais pequeno (que se pretende equivalente) e procura a melhor apresentando-a como óptima.</p>
+<p>Não é descabido que, no processo de redução do espaço de soluções, sejam eliminadas combinações, que apesar de pouco promissoras se viriam a revelar como boas soluções. É por isso que, por vezes é possível <strong>melhorar uma solução optimizada</strong>.</p>
 </section>
+<section id="heurísticas---mais-simples-do-que-parecem" class="level2">
+<h2 class="anchored" data-anchor-id="heurísticas---mais-simples-do-que-parecem">Heurísticas - mais simples do que parecem</h2>
+<p>As heurísticas não são mais do que pequenas regras que permitem avaliar se uma solução é promissora ou não. Em termos simples, o que fazem é avaliar rapidamente qual será o custo previsto da solução. No contexto deste problema, torna-se complexo dar exemplos concretos, por isso vou usar um exemplo que é de fácil entendimento e que explicita o conceito.</p>
+<p>Quando queremos saber o caminho mais curto entre duas cidades, existe um conjunto de decisões gigantesco a avaliar, em cada intersecção que caminho escolher, para onde devo virar em cada cruzamento que encontro.</p>
+<p>Avaliar todas as combinações de todos os cruzamentos é inviável e até disparatado aos olhos de um humano. É aqui que entram em cena as heurísticas!</p>
+<p>A heurística vai dar a <strong>intuição</strong> ao sistema guiando-o para as decisões que parecem interessantes. Por exemplo, uma função que é normalmente usada é a distância em linha reta. A heurística vai classificar como mais promissoras as opções que mais nos aproximam da cidade de destino com menor distância percorrida (quanto já percorremos + a distância em linha reta estamos do destino). Mediante um critério de corte (seja em função de tempo de computação, número de iterações, em número de opções já encontradas ou em percentagem da estimativa para a melhor solução) e eliminar as outras opções.</p>
+<p>Esta heuristica em particular vai avaliar como mais promissores os caminhos com a orientação da cidade de destino. Ir na direção contrária ao destino não parece ser promissor, mas pode efetivamente ser o caminho mais curto. É exatamente isso que pode acontecer também no nosso cenário.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
-<p><img src="images/rsz_2logo.png" class="preview-image img-fluid" width="200"></p>
+<div class="callout-title-container flex-fill">
+Nota
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>Na prática os algoritmos de roteamento usados hoje em dia são bastante mais sofisticados, o exemplo simples é o <a href="https://pt.wikipedia.org/wiki/Algoritmo_A*" target="_blank" rel="noopener noreferrer">Algoritmo A* (A Star)</a> mas existem outros mais interessantes e eficientes como o <a href="https://en.wikipedia.org/wiki/Bidirectional_search" target="_blank" rel="noopener noreferrer">Bidirectional search</a>, este tem uma abordagem muito curiosa, divide o problema em dois e faz o processo nas duas direções (da cidade de origem e da cidade de destino) até que se encontram e formam a solução final (isto permite reduzir drásticamente o espaço de soluções). Existem ainda outras técnicas de clustering de pontos, que dividem o problema em camadas e fazem pré-computação de caminhos óptimos, reduzindo o grafo para conter apenas os caminhos óptimos, sempre com o mesmo objetivo, reduzir o espaço de soluções.</p>
 </div>
-<section id="como-surgiu-esta-ideia" class="level2">
-<h2 class="anchored" data-anchor-id="como-surgiu-esta-ideia">Como surgiu esta ideia?</h2>
-<p>Como qualquer profissional, ao longo dos anos fui recolhendo episódios, histórias (algumas caricatas), situações boas outras nem tanto mas sobretudo fui aprendendo. A esta bagagem normalmente chamamos <strong>Experiência</strong>.</p>
-<p>Ao longo da minha carreira, tive a oportunidade de me cruzar com pessoas fantásticas de diferentes áreas, diferentes perfis e até nacionalidades. Esta exposição a situações complexas moldou-me e obrigou-me a desenvolver mecanismos para sistematizar informação, nesse processo de sistematização fui encontrando padrões, dogmas, mitos e tabus que resultaram em muitas reflexões e um mapa de conceitos cada vez mais complexo.</p>
-<p>Colecionei um conjunto de notas soltas e apontamentos que são conhecimento puro mas inuteis por estarem perdidos em gavetas seja em forma de blocos de notas poeirentos ou pen drives. Nem para mim são utéis.</p>
-<p>Em conversas técnicas com colegas, não raras vezes me ocorre que tenho notas sobre a questão, mesmo quando as encontro (e nem sempre é fácil), não estão em formato partilhável e de fácil consumo sem o devido enquadramento. Eram notas para mim…</p>
-<p>Muitas dessas notas e reflexões foram fonte de inspiração para criar conteúdo explicativo de conceitos complexos que partilhei com colegas e que lhes foi útil.</p>
-<p>Sugeriram-me escrever um livro com esses conteúdos, mas entrar de cabeça num projeto dessa envergadura pareceu-me demasiado arriscado. No entanto não pude ignorar e assim surgiu a ideia de criar um blog e passar a fazer o registo das minhas notas e reflexões online.</p>
-<p>Ao contrário de um livro, um blog não precisa ter todo o seu conteúdo criado antes de ver a luz do dia e pode começar ser útil desde o primeiro post.</p>
+</div>
 </section>
-<section id="o-meu-blog-as-minhas-regras" class="level2">
-<h2 class="anchored" data-anchor-id="o-meu-blog-as-minhas-regras">O meu blog, as minhas regras</h2>
-<p>Não sei qual será a recetividade que o blog terá. Parto nesta aventura sem expetativas, o meu objetivo é a viagem.</p>
-<p>Na pior das hipóteses, terei os meus apontamentos organizados e à distância de um clique.</p>
+<section id="função-objectivo---estrutura-de-custos" class="level2">
+<h2 class="anchored" data-anchor-id="função-objectivo---estrutura-de-custos">Função objectivo - Estrutura de custos</h2>
+<p>Já vimos o papel fundamental das heurísticas e como as suas funções objectivo simplificadas têm de estar bem alinhadas, ainda que simplificadas, com a função objectivo global do problema. O modelo matemático tem 3 elementos fundamentais, as restrições <strong>hard constraints</strong>, <strong>soft constraints</strong> e os <strong>custos</strong>. Enquanto que as primeiras são restrições invioláveis, ou seja, não são admitidas soluções que as violem, as segundas podem ser violadas mas essa violação acarreta um custo adicional que é incorporado na solução objectivo.</p>
+<p>Estas <strong>soft constraints</strong> são também normalmente designadas como as preferências de optimização e estão intimamente ligadas aos critérios mais subjectivos do que representa uma boa solução.</p>
+<p>Com a introdução das <strong>soft constraints</strong> na função objectivo do modelo, o custo para efeito de optimização e o custo real da solução passam a ser diferentes. Uma solução que na realidade é melhor em termos de custos reais pode ser preterida devido à violação de algumas preferências subjectivas que adicionam custo fictício na função objectivo.</p>
+<p>Daqui resulta que seja possível <strong>melhorar uma solução optimizada</strong> se estivermos unicamente a comparar os custos reais, sem valorizar o custo das violações das preferências.</p>
+<p>Em relação aos custos, de forma muito simplista, existem dois grandes grupos de custos, os custos de meios e os custos variáveis. O profundo conhecimento da relação entre estes tipos de custos (muito para além da relação aritmética) é a chave para obter boa <strong>intuição</strong> e navegar eficientemente o espaço de soluções para encontrar boas soluções.</p>
+<p>Trata-se de ser capaz de avaliar se, por exemplo, é melhor adicionar uma viatura ou realizar X kms em vazio para realizar o serviço. Que outras diferenças (não monetárias) têm as duas hipóteses?</p>
 </section>
-<section id="tecnologia-e-transparência" class="level2">
-<h2 class="anchored" data-anchor-id="tecnologia-e-transparência">Tecnologia e transparência</h2>
-<p>A tecnologia permite-nos ser mais eficientes e alcançar coisas incríveis. Em particular, há ferramentas de código aberto disponiveis que rivalizam com as melhores ferramentas comerciais e que permitem tornar acessiveis “super poderes” ao comum dos mortais.</p>
-<p>No desenvolvimento deste blog, tiro partido deste tipo de ferramentas e partilho com total transparência como o fiz e o que fui aprendendo, faço-o para que outros também o possam fazer.</p>
-<p>É um site em código aberto, totalmente acessível em <a href="https://github.com/Sbat13/Sbat13.github.io">Github</a></p>
+<section id="homem-vs-máquina" class="level2">
+<h2 class="anchored" data-anchor-id="homem-vs-máquina">Homem vs Máquina</h2>
+<p>Pelo que já vimos, estes problemas são gigantes e mesmo as máquinas não conseguem dar uma resposta garantidamente óptima para todos os casos.</p>
+<p>Ainda assim, o humano consegue muitas vezes competir com a máquina e até melhorar as soluções da máquina. Mas como é possível que o humano possa “bater” a máquina?</p>
+<p>Depois de muitos anos de experiência acumulada, a minha resposta provocadora é <strong>“fazendo batota”</strong> ou se quisermos ser mais diplomáticos <strong>“usando criatividade”</strong>.</p>
+<p>A máquina está amarrada às regras que lhe foram dadas, enquanto que o humano consegue “jogar” com as regras não escritas se o benefício for evidente, por exemplo, se for dito à máquina que uma viagem chega às 10:01 e outra viagem tem partida às 10:00, todas as combinações em que essas viagens são realizadas pela mesma viatura são descartadas.</p>
+<p>O humano, perante esta situação, tem um olhar mais crítico. Se verificar que esta é a origem de um incremento de meios (e consequentemente um salto significativo nos custos reais) questionará se é possivel alterar os dados base tendo em conta o seu conhecimento com vista a viabilizar esta combinação (“é um horário fora da hora de ponta logo sujeito a menos trânsito, será que o tempo de percurso pode ser encurtado?” e “se a viagem seguinte sair 2 minutos mais tarde?”)</p>
+<p>Em resumo, o humano dificilmente “bate” a máquina, o que faz é alterar o problema, mas para efeitos de negócio é como se o fizesse. É por isso que o <strong>botão mágico é um mito!!</strong></p>
+<p><strong>Então, podemos concluir que na prática os sistemas são inutéis?</strong></p>
+<p>Nem pensar nisso!! Os sistemas dão garantias de controlo das violações de restrições e dão boas soluções com as regras que têm, cabe ao humano, questionar as regras e calibrar as preferências.</p>
+<p>Estes sistemas são ferramentas potentes mas não substituem o humano, dão superpoderes!</p>
+<p>E antes que digam “Mas agora com os avanços da Inteligência Artificial já vai ser possível!”</p>
+<p><strong>Não creio. A Inteligência Artificial poderá contribuir no processo mas sou muito céptico. Penso que muito mais relevante serão os avanços em computação quântica que permitirão “atacar” problemas maiores!</strong></p>
+</section>
+<section id="mas-não-fica-por-aqui" class="level2">
+<h2 class="anchored" data-anchor-id="mas-não-fica-por-aqui">Mas não fica por aqui</h2>
+<p>Tinha muito mais a dizer sobre este assunto mas o artigo já vai longo, por isso fica o compromisso de escrever um artigo dedicado aos <strong>Minutos Mágicos</strong>, deixo-vos uma breve nota sobre <strong>MUS</strong> para despertar o vosso interesse e por último um avanço recente face a um dos algoritmos clássicos.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dica
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para os mais curiosos, deixo uma nota que me parece muito relevante sobre novos algoritmos que estão a ser desenvolvidos para “auditar” as soluções. Isto sim, irá revolucionar a resolução destes problemas ao orientar o humano para reavaliar e questionar as restrições.</p>
+<p>Os <strong>MUS</strong> (Minimum unsatisfiable Subset) são um subconjunto de restrições que têm 3 características importantes: - Nenhuma solução consegue satisfazer simultaneamente estas restrições - Removendo qualquer uma das restrições do subconjunto, o sistema passa a ter solução - Cada sistema pode ter multiplos MUSes e estes não são necessariamente compostos pelo mesma quantidade de restrições</p>
+<p>Na prática, o que um MUS permite é identificar qual a combinação de restrições que está impedir a resolução do problema. As abordagens mais recentes e promissoras, calculam o MUS com menor cardinalidade (o que tem menos restrições) para gerar explicações da impossibilidade de resolver o problema.</p>
+<p>No nosso caso temos um problema de optimização de restrições, e não um problema de satisfação de restrições, ainda assim a técnica pode ser usada introduzindo restrições adicionais, por exemplo se queremos que o sistema explique porque não conseguiu usar menos viaturas, podemos adicionar uma restrição n_viaturas &lt; Y.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Um dos algoritmos clássicos é o <a href="https://pt.wikipedia.org/wiki/Algoritmo_de_Dijkstra" target="_blank" rel="noopener noreferrer">Algoritmo Dijkstra</a> que permite encontrar o caminho mais curto. O algoritmo desenvolvido em 1956 e publicado em 1959 é ainda uma referência.</p>
+<p>A Universidade de Tsinghua publicou este verão (Julho 2025), um <a href="https://arxiv.org/abs/2504.17033" target="_blank" rel="noopener noreferrer">Algoritmo</a> que o supera de forma deterministica em certas circunstâncias.</p>
+<p>A complexidade algorítmica de Djikstra é O(m + n log n) enquanto que o novo algoritmo apresenta O(m. log^(2/3) n)</p>
+<p>Quando o gráfico é disperso, m ≈ n o novo algoritmo apresenta uma melhoria da complexidade na ordem de log^(1/3)n, o reverso da medalha, se o grafo é denso será ao contrário, piora num factor de log^(2/3).</p>
+</div>
+</div>
 <hr>
-<a href="https://sbat13.github.io/">Pausa Técnica</a> <!-- _share-links.qmd -->
+<p><a href="https://sbat13.github.io/">Pausa Técnica</a></p>
+<!-- _share-links.qmd -->
 <div class="social-share" style="display: flex; gap: 20px;">
 <p><a href="#" data-sharer="linkedin" title="Partilhar no LinkedIn"><i class="fa-brands fa-linkedin" aria-label="linkedin"></i></a> <a href="#" data-sharer="whatsapp" title="Partilhar por WhatsApp"><i class="fa-brands fa-whatsapp" aria-label="whatsapp"></i></a> <a href="#" data-sharer="email" title="Partilhar por Email"><i class="fa-solid fa-envelope" aria-label="envelope"></i></a></p>
 </div>
@@ -257,6 +343,7 @@ cookieconsent.run({
 </script>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -696,6 +783,38 @@ cookieconsent.run({
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
