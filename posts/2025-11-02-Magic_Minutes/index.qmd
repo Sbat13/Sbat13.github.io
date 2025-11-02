@@ -1,0 +1,113 @@
+---
+date: "2025-11-02"
+title: "Minutos Mágicos"
+subtitle: "Como fazer batota"
+image: images/featured_image.jpg
+lang: pt
+open-graph:
+  description: "Como podem ser batidos os melhores softwares de optimização?"
+  image: images/featured_image.jpg
+  image-width: 100
+  type: article
+toc: true
+categories: 
+  - "Mobilidade"
+  - "Dados"
+  - "Algoritmos"
+format:
+  html: default
+  #pdf:
+  #  toc: false
+  #  documentclass: scrartcl
+  #  output-file: "20251005_PT_Dados.pdf"
+---
+
+# Minutos Mágicos
+Tal como prometido, deixo-vos um pequeno artigo para refletir e agir de forma focada.
+
+::::: {layout="[70,30]"}
+<div>
+
+**O que afecta o custo de uma operação de transporte público de passageiros (rodoviário)?**
+<br><br>
+
+O custo de operação depende de duas famílias de custos, os custos dos meios (viaturas, motoristas) e os custos marginais (energia, manutenção,etc).
+
+Enquanto que os segundos variam de forma linear (ou muito perto disso) seja em função da distância ou de horas, os custos de meios têm a particularidade funcionam com "saltos" uma vez que os recursos são discretos e não contínuos, não podemos ter 1,5 autocarros...
+
+Embora pareça uma observação evidente, é necessário entender as implicações quando se procura optimizar a eficiência.
+<br><br>
+
+
+</div>
+   
+
+::: {#second-column}
+![Photo by <a href="https://unsplash.com/@nspm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nicolás Pinilla</a> on <a href="https://unsplash.com/photos/a-clock-hanging-from-the-ceiling-of-a-train-station-i_jjwcRqTv8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](images/featured_image.jpg){.preview-image .lightbox width="300"}
+:::
+:::::
+
+## O processo - recapitulando os básicos
+
+```{mermaid}
+graph LR
+  A(Plano de Oferta) --> B(Plano de produção) --> C(Execução)
+
+```
+
+Na fase de elaboração do **plano de Oferta** são definidas, entre outras, as horas de partida, a frequência e o tempo de percurso das linhas.
+
+Na fase de elaboração do **plano de Produção** o objectivo é definir a forma mais eficiente de garantir a oferta. Tipicamente é nesta fase que entram os sistemas sofisticados de optimização e que procuram a melhor solução, minimizando quer o custo total (custo de meios + custos variáveis).
+
+Na fase de execução, são realizados pequenos ajustes e adaptações ao plano de produção para dar resposta a ocorrências (por exemplo indisponibilidade de um motorista).
+
+
+## Optimização
+
+Antes mesmo de começarmos a optimizar, implicitamente o **número mínimo de meios** já ficou definido na fase de definição da oferta.
+Para simplificar, vamos imaginar um cenário em que as viaturas são autónomas e portanto não é necessário alocar as viagens a motoristas, apenas às viaturas. Para maior simplificação vamos tomar o exemplo de uma só linha, com viagens de ida e viagens de volta consecutivas.
+
+Como é fácil de ver, o número mínimo de meios é resultado de quantos horários se sobrepõem, ou dito de outra forma, o número de meios depende da **frequência** e do **tempo de percurso**.
+
+Como a frequência dita o volume de oferta, o nosso foco vai ser o **tempo de percurso**.
+
+::: {.callout-note}
+Para efeitos de simplificação o **tempo de percurso** refere-se à soma do tempo da viagem de ida, da viagem de volta e respetivos tempos de regulação ou amortecimento nos terminais. Por exemplo, uma viagem de 10 minutos por sentido e 2 minutos de regulação em cada terminal tem um tempo de percurso de 10 + 2 + 10 + 2 = 24 minutos
+
+:::
+
+## Sistema perfeito
+
+Mesmo o sistema perfeito não consegue bater esta tabela:
+
+![](images/MM_table.PNG){.preview-image .lightbox width="800"}
+
+
+## Exemplo
+Para uma viagem com um tempo de percurso total de 25 minutos num horário com viagens a cada 8 minutos, retiramos da tabela que são necessárias 4 viaturas.
+
+Na eventualidade de ser possível reduzir o tempo de percurso para 24 minutos, seriam necessárias 3 viaturas em vez das 4 originais. Uma poupança de 25% dos custos associados a meios!!!
+
+Este minuto é um **minuto mágico**!
+
+## Interessante, mas o que posso realmente fazer com isso?
+
+O primeiro passo é identificar (na tabela) onde está cada uma das linhas e em função da proximidade ao minuto mágico (na coluna), priorizar onde o esforço tem maior recompensa associada. Na prática, a revisão dos tempos de percurso é um processo contínuo que depende de multiplos factores (muitos deles externos). Ter a prioridade em função dos ganhos potenciais é crucial para focar os esforços.
+
+Ok, entendo a ideia, mas não se pode simplesmente "cortar" no tempo de percurso para forçar a optimização.
+
+Exactamente, mas se a recompensa é significativa, justifica-se analisar e questionar o que leva a esse tempo de percurso. Por exemplo, repensar o percurso da linha, reorganizar percursos entre linhas, propor relocalização inteligente de paragens, propor corredores bus, etc.
+
+Há muitas formas de abordar o problema da velocidade comercial, os **minutos mágicos** ajudam-nos a identificar onde o impacto é mais significativo em vez de uma abordagem genérica e conceptual.
+
+## Nota final
+
+Esta abordagem "abusa" de simplificações e não é 100% exacta, no entanto, por experiência própria, revela-se tremendamente eficaz, dada a facilidade e rapidez da sua aplicação.
+
+É tanto mais eficaz quanto mais densa for a oferta (operações urbanas ou metropolitanas). A aplicação em linhas de carácter mais interurbano não é directa, pois nesse caso, quer os vazios quer as diferentes bases dos motoristas podem moldar a solução óptima (por vezes é mais eficiente utilizar mais viaturas do que ter mais motoristas ou realizar mais quilometros em vazio). Para esses casos, temos outros truques que podemos utilizar...
+
+------------------------------------------------------------------------
+
+[Pausa Técnica](https://sbat13.github.io/)
+
+{{< include "/_share-links.qmd" >}}
