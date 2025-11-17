@@ -1580,6 +1580,22 @@ wheels = [
 ]
 
 [[package]]
+name = "quarto"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "ipykernel" },
+    { name = "jupyter-core" },
+    { name = "nbclient" },
+    { name = "nbformat" },
+    { name = "pyyaml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/82/a4/33dc28f6fcd5ff80ee80b2afddea9bc46a42f5e2bbc000eeb1b5f6194918/quarto-0.1.0.tar.gz", hash = "sha256:d9a4978110204f5b9d3af39faa9e195083efcbac8f6a23789e29cb27c72ded15", size = 2920, upload-time = "2021-02-03T21:53:12.381Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7d/14/8af79508df038ab05953ecf862420c7f4cc131b1682f0c80cb4f78c58593/quarto-0.1.0-py3-none-any.whl", hash = "sha256:8138fc9d1bee6269a5436837baedc699a262be1478f96444d6f99029f1a114f0", size = 10319, upload-time = "2021-02-03T21:53:10.812Z" },
+]
+
+[[package]]
 name = "referencing"
 version = "0.36.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1798,6 +1814,7 @@ dependencies = [
     { name = "pytz" },
     { name = "pyyaml" },
     { name = "pyzmq" },
+    { name = "quarto" },
     { name = "referencing" },
     { name = "requests" },
     { name = "rfc3339-validator" },
@@ -1915,6 +1932,7 @@ requires-dist = [
     { name = "pytz", specifier = "==2025.2" },
     { name = "pyyaml", specifier = "==6.0.2" },
     { name = "pyzmq", specifier = "==27.1.0" },
+    { name = "quarto", specifier = ">=0.1.0" },
     { name = "referencing", specifier = "==0.36.2" },
     { name = "requests", specifier = "==2.32.5" },
     { name = "rfc3339-validator", specifier = "==0.1.4" },
