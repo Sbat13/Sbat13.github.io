@@ -1,0 +1,138 @@
+---
+date: "2025-12-01"
+title: "Zonamentos e Tarifários"
+subtitle: "Justiça versus simplicidade"
+image: images/featured_image.jpg
+lang: pt
+open-graph:
+  description: "O tarifário de um sistema de transportes é uma peça fundamental para determinar políticas de mobilidade, não menos importante é o zonamento subjacente, no entanto, é frequentemente relegado para segundo plano, com consequências silenciosas e gerando situações perniciosas e de díficil comunicação. Neste artigo, iremos explorar qual o âmbito de cada um e como interagem para formar uma poderosa ferramenta de implementação de políticas de mobilidade."
+  image: images/featured_image.jpg
+  image-width: 100
+  type: article
+toc: true
+categories: 
+  - "Mobilidade"
+  - "Zonamento"
+  - "Tarifário"
+format:
+  html: default
+---
+
+O tarifário de um sistema de transportes é uma peça fundamental para determinar políticas de mobilidade, não menos importante é o zonamento subjacente, no entanto, é frequentemente relegado para segundo plano, com consequências silenciosas e gerando situações incoerentes, perniciosas e de díficil comunicação. 
+<br>
+<br>
+Neste artigo, iremos explorar qual o âmbito de cada um e como interagem para formar uma poderosa ferramenta de implementação de políticas de mobilidade.
+
+
+::::: {layout="[70,30]"}
+<div>
+
+# Para que serve um tarifário?
+Na verdade esta aparente simples questão encerra em si várias camadas de complexidade.
+<br>
+<br>
+O objectivo óbvio e principal é o de garantir o financiamento do sistema e a sua sustentabilidade.
+O tarifário serve também para distribuir os custos de forma equitativa pelos utilizadores (e não utilizadores) do sistema.
+<br>
+<br>
+É precisamente para promover a **equidade do tarifário entre utilizadores** que o **zonamento** se revela imprescindível.
+
+Se por um lado o tarifário deve ser simples e de fácil comunicação, por outro deve ser justo. Estas duas forças são opostas e o seu frágil equilibrio dita o seu sucesso.
+
+<br>
+<br>
+Levando ao extremo, se o tarifário for igual para todos seria *simples* mas não *equitativo*. No outro extremo, se cada um tivesse uma tarifa diferente para garantir equidade não seria certamente simples.
+
+</div>
+
+::: {#second-column}
+      
+![Zonamento Andante original (2002)](images/featured_image.jpg){.preview-image .lightbox width="300"}
+:::
+:::::
+# Tipos de modelos tarifários
+## Linear
+Historicamente os serviços de transporte rodoviário de passageiros baseavam-se em modelos lineares, ou seja, as tarifas eram semi-proporcionais à distância percorrida. Neste modelo são definidas paragens-zona, a distância entre a paragem-zona anterior à paragem de entrada de passageiro e a paragem-zona posterior à paragem de saida do passageiro determina o escalão quilométrico. A cada escalão está associado uma tarifa para cada tipo de título.
+
+## Zonal
+Neste modelo, o território está "catalogado" com uma zona, com limites bem definidos. À semelhança do modelo linear, a tarifa é determinada por uma quantidade "consumida", neste caso, de zonas.
+
+<br>
+Este modelo tem vindo a ser cada vez mais adoptado e a sua análise mais detalhada será desenvolvida mais adiante no texto.
+
+## Misto - Táxi
+A tarifa de táxi, tem várias componentes, a mais diferenciadora é a bandeirada (valor mínimo de saída), depois funciona em função da distância e/ou tempo. Além disso, conforme a zona (pré-definida e identificada por sinalética vertical na via) os coeficinetes destes parâmetros são alterados (têm subjacente diferentes velocidades).
+Tem uma componente linear e uma componente zonal, que faz alterar os parâmetros de cálculo da tarifa linear.
+
+
+## Misto dinâmico - plataformas TVDE
+Nas plataformas TVDE, além dos parâmetros anteriormente referidos para o modelo tarifário misto do táxi, são ainda introduzidos outros parâmetros dinâmicos que, apesar de levarem a maior complexidade, deveriam, pelo menos conceptualmente, melhorar a equidade.
+
+## Diferenças importantes
+Nestes dois últimos exemplos, Táxi e TVDE há particularidades que os distinguem face aos tarifários de transporte colectivo tradicional.
+
+<ol>
+<li> Apenas os utilizadores garantem a sustentabilidade</li>
+<li> A tarifa não é por pessoa transportada, mas sim para a viatura que é "fretada"</li>
+<li> O trajeto não está previamente definido, é optimizado no momento da viagem</li>
+</ol>
+
+A tarifa final não é, nestes dois casos, sempre igual para uma mesma viagem.
+
+# Ainda sobre tarifários de transporte público...
+Além do modelo tarifário existe ainda uma outra dimensão que lida com a flexibilidade do título e o tipo de uso.
+Assim, temos tipicamente os títulos de assinatura e os títulos ocasionais. Historicamente os títulos de assinatura usufruiam de um desconto de quantidade pois correspondiam à aquisição de 44 bilhetes simples (2 viagens por dia útil).
+
+Esta dimensão é necessária dada a natureza perecível do transporte regular. Quando um autocarro sai de uma paragem, os lugares produzidos e não ocupados "vão para o lixo", pelo menos até à próxima paragem.
+A oferta produzida em hora de ponta é determinada pela procura verificada e é fundamental que esteja o mais ajustada possível para garantir um uso eficiente dos meios. Por outras palavras, o custo da produção é fortemente dependente da disponibilidade de meios.
+
+Nessa mesma lógica de equidade, nalguns sistemas de transportes, existem títulos "off-peak" cujas tarifas são inferiores precisamente porque se trata de um bem perecível que de outra forma seria desperdiçado.
+
+# Há Zonas e Zonas! - O diabo está nos detalhes
+
+Como vimos anteriormente a quantidade de zonas "consumidas" determina a tarifa, mas **como se definem os limites das zonas?**
+
+Ora, é precisamente aqui que entra a minha reflexão, não consegui identificar critérios técnicos claros. Pelo que pude constatar, um pouco por todo o país, os zonamentos são resquícios históricos de tarifas de modelos lineares que foram refletidos em zonamento. Por exemplo, os limites históricos de zonas da CP são usados para delimitar zonas, são ainda usadas algumas das paragens-zona ao longo das estradas principais herdadas do modelo linear dos operadores rodoviários.
+
+Por vezes, mas nem sempre, são usados os limites administrativos, também eles problemáticos sendo o caso mais típico quando um eixo de via é usado como fronteira de municípios, ou seja, a paragem de um lado da via está numa zona e a sua correspondente na zona vizinha. Neste caso, a ida e a volta da mesma viagem tem tarifas diferentes...
+
+E a parte pior, o mesmo território tem associados multiplos zonamentos, dependente da rede de cada autoridade de transporte, fazendo com que as redes se canibalizem.
+
+*Pensando no que uma zona representa e o papel que pode desempenhar para a coesão territorial, parece-me uma oportunidade perdida.*
+
+# Como poderia funcionar?
+
+Não tenho uma resposta definitiva, mas tenho identificadas várias ideias e principios que partilho para dar inicio a um debate alargado.
+
+## Um zonamento nacional único
+
+Com um zonamento único o caminho que se antevê de integrações entre redes, sistemas de bilhética e interoperabilidade estaria amplamente facilitado. Seriam também eliminados, por design, os problemas de sobreposição de zonamentos agora existentes.
+A comunicação às populações estaria facilitada e seria única e coerente.
+
+## Criação de micro-zonas, com correspondência a unidades estatísticas
+
+Este princípio permite relacionar a informação de mobilidade com os restantes dados estatísticos, permitindo um real acompanhamento das relações entre o uso do solo e a mobilidade. Tratar-se-ia de um importante passo no sentido de criar directrizes de desenho de redes e oferta de forma equitativa por todas as autoridades de transporte.
+
+## Definição de critérios de coesão territorial para agregação de microzonas em zonas
+
+As necessidades de mobilidade e a ocupação do solo estão em constante mudança, pelo que é previsivél a necessidade futura de alterar qualquer zonamento que venha a ser definido. Segundo este princípio, os critérios para proceder a essas alterações devem estar previstos de forma transparente e de aplicação a todo o território nacional. Com uma alteração do zonamento regulada, será possível manter o histórico de informação ao nível das micro-zonas.
+
+
+## Nota final
+
+Não abordei, propositadamente, os diferentes programas de redução tarifária actualmente em vigor. A razão é simples, o tarifário é o mesmo, mas a tarifa é suportada por outra entidade que não o utilizador. É importante, não confundir a tarifa "técnica" com o preço de venda ao público.
+
+Ainda a propósito dos vários regulamentos de apoio à redução tarifária aprovados por todo o país para reduzir o preço de venda ao público, importa referir que são por vezes definidos passes municipais sem que os limites municipais possam ser definidos por um conjunto de zonas, ou seja, há zonas que pertencem a dois municípios, levando a que, caso o passe inclua essa zona, vai para além do município, caso não a inclua, há munícipes que não podem usufruir de passe municipal...
+
+A melhor forma de resolver este tipo de questão é especificar quais são as zonas para as quais o desconto de preço de venda ao público se aplica.
+
+<br>
+
+**Dei o pontapé de saída, aguardo feedback.**
+
+<br>
+------------------------------------------------------------------------
+
+[Pausa Técnica](https://sbat13.github.io/)
+
+{{< include "/_share-links.qmd" >}}
