@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Zonamentos e Tarifários – Pausa Técnica</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-e1a348d7687e34d62e824fa0611af390.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e1a348d7687e34d62e824fa0611af390.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-e1a348d7687e34d62e824fa0611af390.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"implied",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"pt"
+  });
+});
+</script> 
+  
+
+
+<link rel="stylesheet" href="../../mermaid-colors.css">
+<meta property="og:title" content="Zonamentos e Tarifários – Pausa Técnica">
+<meta property="og:description" content="O tarifário de um sistema de transportes é uma peça fundamental para determinar políticas de mobilidade, não menos importante é o zonamento subjacente, no entanto, é frequentemente relegado para segundo plano, com consequências silenciosas e gerando situações perniciosas e de díficil comunicação. Neste artigo, iremos explorar qual o âmbito de cada um e como interagem para formar uma poderosa ferramenta de implementação de políticas de mobilidade.">
+<meta property="og:image" content="https://sbat13.github.io/posts/2025-12-01-Zones_Fares/images/featured_image.jpg">
+<meta property="og:site_name" content="Pausa Técnica">
+<meta property="og:locale" content="pt_PT">
+<link rel="canonical" href="https://sbat13.github.io/posts/2025-12-01-Zones_Fares/">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Zonamentos e Tarifários</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+  <div id="quarto-announcement" data-announcement-id="386b8dd7d457f2778366d0289efc4084" class="alert alert-primary hidden"><i class="bi bi-rocket-takeoff-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><strong>LIVE</strong> - Lançamento do website!!!</p>
+</div></div>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../logo-nobg.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../logo-nobg.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <div id="quarto-search" class="quarto-navigation-tool px-1" title="Procurar"></div>
+</div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sobre</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Blog</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../recursos/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Recursos</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#tipos-de-modelos-tarifários" id="toc-tipos-de-modelos-tarifários" class="nav-link active" data-scroll-target="#tipos-de-modelos-tarifários">Tipos de modelos tarifários</a>
+  <ul class="collapse">
+  <li><a href="#linear" id="toc-linear" class="nav-link" data-scroll-target="#linear">Linear</a></li>
+  <li><a href="#zonal" id="toc-zonal" class="nav-link" data-scroll-target="#zonal">Zonal</a></li>
+  <li><a href="#misto---táxi" id="toc-misto---táxi" class="nav-link" data-scroll-target="#misto---táxi">Misto - Táxi</a></li>
+  <li><a href="#misto-dinâmico---plataformas-tvde" id="toc-misto-dinâmico---plataformas-tvde" class="nav-link" data-scroll-target="#misto-dinâmico---plataformas-tvde">Misto dinâmico - plataformas TVDE</a></li>
+  <li><a href="#diferenças-importantes" id="toc-diferenças-importantes" class="nav-link" data-scroll-target="#diferenças-importantes">Diferenças importantes</a></li>
+  </ul></li>
+  <li><a href="#ainda-sobre-tarifários-de-transporte-público" id="toc-ainda-sobre-tarifários-de-transporte-público" class="nav-link" data-scroll-target="#ainda-sobre-tarifários-de-transporte-público">Ainda sobre tarifários de transporte público…</a></li>
+  <li><a href="#há-zonas-e-zonas---o-diabo-está-nos-detalhes" id="toc-há-zonas-e-zonas---o-diabo-está-nos-detalhes" class="nav-link" data-scroll-target="#há-zonas-e-zonas---o-diabo-está-nos-detalhes">Há Zonas e Zonas! - O diabo está nos detalhes</a></li>
+  <li><a href="#como-poderia-funcionar" id="toc-como-poderia-funcionar" class="nav-link" data-scroll-target="#como-poderia-funcionar">Como poderia funcionar?</a>
+  <ul class="collapse">
+  <li><a href="#um-zonamento-nacional-único" id="toc-um-zonamento-nacional-único" class="nav-link" data-scroll-target="#um-zonamento-nacional-único">Um zonamento nacional único</a></li>
+  <li><a href="#criação-de-micro-zonas-com-correspondência-a-unidades-estatísticas" id="toc-criação-de-micro-zonas-com-correspondência-a-unidades-estatísticas" class="nav-link" data-scroll-target="#criação-de-micro-zonas-com-correspondência-a-unidades-estatísticas">Criação de micro-zonas, com correspondência a unidades estatísticas</a></li>
+  <li><a href="#definição-de-critérios-de-coesão-territorial-para-agregação-de-microzonas-em-zonas" id="toc-definição-de-critérios-de-coesão-territorial-para-agregação-de-microzonas-em-zonas" class="nav-link" data-scroll-target="#definição-de-critérios-de-coesão-territorial-para-agregação-de-microzonas-em-zonas">Definição de critérios de coesão territorial para agregação de microzonas em zonas</a></li>
+  <li><a href="#nota-final" id="toc-nota-final" class="nav-link" data-scroll-target="#nota-final">Nota final</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><br></a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Zonamentos e Tarifários</h1>
+<p class="subtitle lead">Justiça versus simplicidade</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Mobilidade</div>
+    <div class="quarto-category">Zonamento</div>
+    <div class="quarto-category">Tarifário</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">1 de dezembro de 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>O tarifário de um sistema de transportes é uma peça fundamental para determinar políticas de mobilidade, não menos importante é o zonamento subjacente, no entanto, é frequentemente relegado para segundo plano, com consequências silenciosas e gerando situações incoerentes, perniciosas e de díficil comunicação. <br> <br> Neste artigo, iremos explorar qual o âmbito de cada um e como interagem para formar uma poderosa ferramenta de implementação de políticas de mobilidade.</p>
+<div class="quarto-layout-panel" data-layout="[70,30]">
+<div class="quarto-layout-row">
+<section id="para-que-serve-um-tarifário" class="level1 quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
+<h1>Para que serve um tarifário?</h1>
+<p>Na verdade esta aparente simples questão encerra em si várias camadas de complexidade. <br> <br> O objectivo óbvio e principal é o de garantir o financiamento do sistema e a sua sustentabilidade. O tarifário serve também para distribuir os custos de forma equitativa pelos utilizadores (e não utilizadores) do sistema. <br> <br> É precisamente para promover a <strong>equidade do tarifário entre utilizadores</strong> que o <strong>zonamento</strong> se revela imprescindível.</p>
+<p>Se por um lado o tarifário deve ser simples e de fácil comunicação, por outro deve ser justo. Estas duas forças são opostas e o seu frágil equilibrio dita o seu sucesso.</p>
+<p><br> <br> Levando ao extremo, se o tarifário for igual para todos seria <em>simples</em> mas não <em>equitativo</em>. No outro extremo, se cada um tivesse uma tarifa diferente para garantir equidade não seria certamente simples.</p>
+</section>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/featured_image.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Zonamento Andante original (2002)"><img src="images/featured_image.jpg" class="preview-image img-fluid figure-img" width="300" alt="Zonamento Andante original (2002)"></a></p>
+<figcaption>Zonamento Andante original (2002)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="tipos-de-modelos-tarifários" class="level1">
+<h1>Tipos de modelos tarifários</h1>
+<section id="linear" class="level2">
+<h2 class="anchored" data-anchor-id="linear">Linear</h2>
+<p>Historicamente os serviços de transporte rodoviário de passageiros baseavam-se em modelos lineares, ou seja, as tarifas eram semi-proporcionais à distância percorrida. Neste modelo são definidas paragens-zona, a distância entre a paragem-zona anterior à paragem de entrada de passageiro e a paragem-zona posterior à paragem de saida do passageiro determina o escalão quilométrico. A cada escalão está associado uma tarifa para cada tipo de título.</p>
+</section>
+<section id="zonal" class="level2">
+<h2 class="anchored" data-anchor-id="zonal">Zonal</h2>
+<p>Neste modelo, o território está “catalogado” com uma zona, com limites bem definidos. À semelhança do modelo linear, a tarifa é determinada por uma quantidade “consumida”, neste caso, de zonas.</p>
+<p><br> Este modelo tem vindo a ser cada vez mais adoptado e a sua análise mais detalhada será desenvolvida mais adiante no texto.</p>
+</section>
+<section id="misto---táxi" class="level2">
+<h2 class="anchored" data-anchor-id="misto---táxi">Misto - Táxi</h2>
+<p>A tarifa de táxi, tem várias componentes, a mais diferenciadora é a bandeirada (valor mínimo de saída), depois funciona em função da distância e/ou tempo. Além disso, conforme a zona (pré-definida e identificada por sinalética vertical na via) os coeficinetes destes parâmetros são alterados (têm subjacente diferentes velocidades). Tem uma componente linear e uma componente zonal, que faz alterar os parâmetros de cálculo da tarifa linear.</p>
+</section>
+<section id="misto-dinâmico---plataformas-tvde" class="level2">
+<h2 class="anchored" data-anchor-id="misto-dinâmico---plataformas-tvde">Misto dinâmico - plataformas TVDE</h2>
+<p>Nas plataformas TVDE, além dos parâmetros anteriormente referidos para o modelo tarifário misto do táxi, são ainda introduzidos outros parâmetros dinâmicos que, apesar de levarem a maior complexidade, deveriam, pelo menos conceptualmente, melhorar a equidade.</p>
+</section>
+<section id="diferenças-importantes" class="level2">
+<h2 class="anchored" data-anchor-id="diferenças-importantes">Diferenças importantes</h2>
+<p>Nestes dois últimos exemplos, Táxi e TVDE há particularidades que os distinguem face aos tarifários de transporte colectivo tradicional.</p>
+<ol>
+<li>
+Apenas os utilizadores garantem a sustentabilidade
+</li>
+<li>
+A tarifa não é por pessoa transportada, mas sim para a viatura que é “fretada”
+</li>
+<li>
+O trajeto não está previamente definido, é optimizado no momento da viagem
+</li>
+</ol>
+<p>A tarifa final não é, nestes dois casos, sempre igual para uma mesma viagem.</p>
+</section>
+</section>
+<section id="ainda-sobre-tarifários-de-transporte-público" class="level1">
+<h1>Ainda sobre tarifários de transporte público…</h1>
+<p>Além do modelo tarifário existe ainda uma outra dimensão que lida com a flexibilidade do título e o tipo de uso. Assim, temos tipicamente os títulos de assinatura e os títulos ocasionais. Historicamente os títulos de assinatura usufruiam de um desconto de quantidade pois correspondiam à aquisição de 44 bilhetes simples (2 viagens por dia útil).</p>
+<p>Esta dimensão é necessária dada a natureza perecível do transporte regular. Quando um autocarro sai de uma paragem, os lugares produzidos e não ocupados “vão para o lixo”, pelo menos até à próxima paragem. A oferta produzida em hora de ponta é determinada pela procura verificada e é fundamental que esteja o mais ajustada possível para garantir um uso eficiente dos meios. Por outras palavras, o custo da produção é fortemente dependente da disponibilidade de meios.</p>
+<p>Nessa mesma lógica de equidade, nalguns sistemas de transportes, existem títulos “off-peak” cujas tarifas são inferiores precisamente porque se trata de um bem perecível que de outra forma seria desperdiçado.</p>
+</section>
+<section id="há-zonas-e-zonas---o-diabo-está-nos-detalhes" class="level1">
+<h1>Há Zonas e Zonas! - O diabo está nos detalhes</h1>
+<p>Como vimos anteriormente a quantidade de zonas “consumidas” determina a tarifa, mas <strong>como se definem os limites das zonas?</strong></p>
+<p>Ora, é precisamente aqui que entra a minha reflexão, não consegui identificar critérios técnicos claros. Pelo que pude constatar, um pouco por todo o país, os zonamentos são resquícios históricos de tarifas de modelos lineares que foram refletidos em zonamento. Por exemplo, os limites históricos de zonas da CP são usados para delimitar zonas, são ainda usadas algumas das paragens-zona ao longo das estradas principais herdadas do modelo linear dos operadores rodoviários.</p>
+<p>Por vezes, mas nem sempre, são usados os limites administrativos, também eles problemáticos sendo o caso mais típico quando um eixo de via é usado como fronteira de municípios, ou seja, a paragem de um lado da via está numa zona e a sua correspondente na zona vizinha. Neste caso, a ida e a volta da mesma viagem tem tarifas diferentes…</p>
+<p>E a parte pior, o mesmo território tem associados multiplos zonamentos, dependente da rede de cada autoridade de transporte, fazendo com que as redes se canibalizem.</p>
+<p><em>Pensando no que uma zona representa e o papel que pode desempenhar para a coesão territorial, parece-me uma oportunidade perdida.</em></p>
+</section>
+<section id="como-poderia-funcionar" class="level1">
+<h1>Como poderia funcionar?</h1>
+<p>Não tenho uma resposta definitiva, mas tenho identificadas várias ideias e principios que partilho para dar inicio a um debate alargado.</p>
+<section id="um-zonamento-nacional-único" class="level2">
+<h2 class="anchored" data-anchor-id="um-zonamento-nacional-único">Um zonamento nacional único</h2>
+<p>Com um zonamento único o caminho que se antevê de integrações entre redes, sistemas de bilhética e interoperabilidade estaria amplamente facilitado. Seriam também eliminados, por design, os problemas de sobreposição de zonamentos agora existentes. A comunicação às populações estaria facilitada e seria única e coerente.</p>
+</section>
+<section id="criação-de-micro-zonas-com-correspondência-a-unidades-estatísticas" class="level2">
+<h2 class="anchored" data-anchor-id="criação-de-micro-zonas-com-correspondência-a-unidades-estatísticas">Criação de micro-zonas, com correspondência a unidades estatísticas</h2>
+<p>Este princípio permite relacionar a informação de mobilidade com os restantes dados estatísticos, permitindo um real acompanhamento das relações entre o uso do solo e a mobilidade. Tratar-se-ia de um importante passo no sentido de criar directrizes de desenho de redes e oferta de forma equitativa por todas as autoridades de transporte.</p>
+</section>
+<section id="definição-de-critérios-de-coesão-territorial-para-agregação-de-microzonas-em-zonas" class="level2">
+<h2 class="anchored" data-anchor-id="definição-de-critérios-de-coesão-territorial-para-agregação-de-microzonas-em-zonas">Definição de critérios de coesão territorial para agregação de microzonas em zonas</h2>
+<p>As necessidades de mobilidade e a ocupação do solo estão em constante mudança, pelo que é previsivél a necessidade futura de alterar qualquer zonamento que venha a ser definido. Segundo este princípio, os critérios para proceder a essas alterações devem estar previstos de forma transparente e de aplicação a todo o território nacional. Com uma alteração do zonamento regulada, será possível manter o histórico de informação ao nível das micro-zonas.</p>
+</section>
+<section id="nota-final" class="level2">
+<h2 class="anchored" data-anchor-id="nota-final">Nota final</h2>
+<p>Não abordei, propositadamente, os diferentes programas de redução tarifária actualmente em vigor. A razão é simples, o tarifário é o mesmo, mas a tarifa é suportada por outra entidade que não o utilizador. É importante, não confundir a tarifa “técnica” com o preço de venda ao público.</p>
+<p>Ainda a propósito dos vários regulamentos de apoio à redução tarifária aprovados por todo o país para reduzir o preço de venda ao público, importa referir que são por vezes definidos passes municipais sem que os limites municipais possam ser definidos por um conjunto de zonas, ou seja, há zonas que pertencem a dois municípios, levando a que, caso o passe inclua essa zona, vai para além do município, caso não a inclua, há munícipes que não podem usufruir de passe municipal…</p>
+<p>A melhor forma de resolver este tipo de questão é especificar quais são as zonas para as quais o desconto de preço de venda ao público se aplica.</p>
+<p><br></p>
+<p><strong>Dei o pontapé de saída, aguardo feedback.</strong></p>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"><br></h2>
+<p><a href="https://sbat13.github.io/">Pausa Técnica</a></p>
+<!-- _share-links.qmd -->
+<div class="social-share" style="display: flex; gap: 20px;">
+<p><a href="#" data-sharer="linkedin" title="Partilhar no LinkedIn"><i class="fa-brands fa-linkedin" aria-label="linkedin"></i></a> <a href="#" data-sharer="whatsapp" title="Partilhar por WhatsApp"><i class="fa-brands fa-whatsapp" aria-label="whatsapp"></i></a> <a href="#" data-sharer="email" title="Partilhar por Email"><i class="fa-solid fa-envelope" aria-label="envelope"></i></a></p>
+</div>
+<script src="../../sharer.core.js"></script>
+<script src="../../services/linkedin.js"></script>
+<script src="../../services/whatsapp.js"></script>
+<script src="../../services/email.js"></script>
+<script>
+  Sharer.init(); // ensure click listeners are attached
+</script>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/sbat13\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Made with ♥️ &amp; <a href="https://quarto.org">Quarto</a></p>
+</div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">🍪Cookies</a></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © 2025
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Sbat13" target="_blank">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/sfbatista/" target="_blank">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:sbat13@yahoo.com">
+      <i class="bi bi-envelope-at-fill" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>
