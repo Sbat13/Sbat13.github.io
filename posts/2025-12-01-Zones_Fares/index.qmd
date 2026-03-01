@@ -14,6 +14,7 @@ categories:
   - "Mobilidade"
   - "Zonamento"
   - "Tarifário"
+  - "Equidade"
 format:
   html: default
 ---
