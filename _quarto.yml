@@ -19,12 +19,12 @@ website:
     site-name: "Pausa Técnica"
     locale: pt_PT
 
-  announcement:
-    icon: rocket-takeoff-fill
-    dismissable: false
-    content: "**LIVE** - Lançamento do website!!!"
-    type: primary
-    position: below-navbar 
+  #announcement:
+  #  icon: rocket-takeoff-fill
+  #  dismissable: false
+  #  content: "**LIVE** - Lançamento do website!!!"
+  #  type: primary
+  #  position: below-navbar 
 
   cookie-consent:
     type: implied
@@ -79,7 +79,8 @@ format:
   html:
     canonical-url: true
     embed-resources: false
-    theme: journal
+    theme: flatly 
+      #journal
       #light: flatly
       #dark: sketchy
       
