@@ -1,0 +1,337 @@
+---
+date: "2026-07-29"
+title: "Óbvio"
+subtitle: "Como explicar o óbvio?"
+image: images/featured_image.jpg
+lang: pt
+open-graph:
+  description: "Todos os dias respondemos a centenas de perguntas, respondemos e passamos à frente. Por vezes nem sabemos como chegámos à reposta, simplesmente... é óbvio"
+  image: images/featured_image.jpg
+  image-width: 100
+  type: article
+toc: true
+categories: 
+  - "Mobilidade"
+  - "Experiência"
+  - "Dados"
+format:
+  html: default
+---
+
+# Como explicar o óbvio?
+
+::::: {layout="[70,30]"}
+
+<div>
+
+Todos os dias respondemos a centenas de perguntas. 
+
+A maioria delas desaparece logo a seguir.
+
+Nãp porque fossem difícieis.
+
+Mas porque nunca sentimos necessidade de perguntar como chegámos à resposta.
+
+Até ao momento em que alguém faz precisamente essa pergunta.
+
+É aí que o óbvio deixa de ser assim tão óbvio.
+
+
+</div>
+
+::: {#second-column}
+
+
+![Photo by <a href="https://unsplash.com/@ttepavac?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tanja Tepavac</a> on <a href="https://unsplash.com/photos/a-piece-of-a-puzzle-with-a-missing-piece-cWMhxNmQVq0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](images/featured_image.jpg){.preview-image .lightbox width="300"}
+
+
+
+
+      
+:::
+:::::
+
+---
+
+# Três experiências
+
+## Caso 1
+
+É um dia igual a tantos outros.
+
+Está na paragem à espera do autocarro que o vai levar ao centro da cidade.
+
+Enquanto aguarda, responde a uma mensagem no telemóvel.
+
+Quanto termina, levanta os olhos.
+
+O autocarro está parado à sua frente.
+
+Sorri.
+
+Sabe que é o **seu autocarro**.
+
+**Como soube?**
+
+Volte ao texto.
+
+Tem a certeza de que o número do autocarro aparecia?
+
+Não aparece.
+
+O destino também não.
+
+Nem sequer é referido qualquer som.
+
+Mesmo assim, dificilmente hesitou.
+
+O curioso não é ter respondido.
+
+***É já não conseguir explicar como respondeu.***
+
+---
+
+## Caso 2
+
+- 8:00
+- 8:15
+- 8:45
+- 9:00
+- 9:15
+- 9:30
+
+Há qualquer coisa estranha nesta sequência de horários.
+
+*Sentiu-o* isso antes de conseguir dizer exatamente o quê.
+
+**Como soube?**
+
+Volte a olhar.
+
+Os horários continuam iguais.
+
+O estranho é que a sua resposta também.
+
+---
+
+## Caso 3
+
+Depois de vários percalços, chega finalmente à estação de comboios.
+
+O painel de informação está desligado.
+
+O autocarro parado em frente à estação está quase vazio.
+
+Sorri. 
+
+Sabe que ainda vai a tempo.
+
+**Como soube?**
+
+O painel não o diz.
+
+O autocarro também não.
+
+Mesmo assim, a conclusão parece-lhe evidente.
+
+---
+
+# O que acabou de acontecer?
+
+Esqueçamos, por um momento, os exemplos.
+
+Há algo mais interessante.
+
+A forma como tentou explicá-los.
+
+Nos três casos fez praticamente a mesma coisa.
+
+Voltou atrás.
+
+No primeiro exemplo voltou ao texto.
+
+No segundo voltou aos horários.
+
+No terceiro voltou ao painel.
+
+Mudaram os exemplos.
+
+Não mudou a procura.
+
+Repare agora numa coisa.
+
+Em nenhum momento voltou a perguntar se a resposta estava certa.
+
+Voltou apenas à procura da explicação.
+
+Curiosamente, nunca duvidou da resposta.
+
+Duvidou apenas da explicação.
+
+# À procura do detalhe
+
+Sem reparar, assumiu que existia um detalhe escondido, algures no texto, capaz de justificar tudo.
+
+Continuou à procura dele.
+
+Uma palavra.
+
+Um número.
+
+Um pormenor que lhe permitisse apontar para o texto e dizer:
+
+*Foi isto.*
+
+Nunca o encontrou.
+
+Mesmo assim, nunca deixou de confiar na resposta.
+
+Vale a pena voltar aos três exemplos.
+
+Em nenhum deles encontrou aquilo que procurava.
+
+Mesmo assim, soube.
+
+
+# A falha
+
+Talvez o problema nunca tenha sido a falta de informação.
+
+Talvez tenha sido o lugar onde procurámos a explicação.
+
+Partimos do princípio de que uma resposta nasce de um único facto.
+
+Como se existisse sempre uma observação decisiva.
+
+Mas nenhum dos exemplos funciona assim.
+
+No primeiro, nenhum detalhe identifica o autocarro.
+
+No segundo, nenhum horário revela o padrão.
+
+No terceiro, nem o painel nem o autocarro anunciam qualquer atraso.
+
+E, no entanto, respondeu aos três.
+
+Os factos não mudaram.
+
+Mudou apenas a forma como passaram a fazer sentido em conjunto.
+
+# Uma quarta experiência
+
+Entra numa oficina bem organizada. As ferramentas estão penduradas na parede. Cada uma ocupa um lugar desenhado à sua medida.
+
+Agora repare numa coisa.
+
+**Falta uma chave.**
+
+Não precisou de contar ferramentas.
+
+Nem de percorrer a oficina inteira.
+
+A ausência saltou imediatamente à vista.
+
+*Porquê?*
+
+Não apareceu informação nova.
+
+Pelo contrário.
+
+Há menos informação do que havia há instantes.
+
+O que existe é uma estrutura.
+
+Uma organização suficientemente rica para que aquilo que falta deixe de estar escondido.
+
+De repente, a ausência torna-se evidente.
+
+Talvez a experiência funcione exatamente da mesma forma.
+
+
+# Porque é que isto importa?
+
+À primeira vista, este artigo parece falar sobre a forma como respondemos a perguntas.
+
+Na realidade, fala também sobre transportes.
+
+Os sistemas de mobilidade pertencem a uma categoria muito particular de problemas.
+
+São sistemas complexos.
+
+Dinâmicos.
+
+Interativos.
+
+Abertos.
+
+Evolutivos.
+
+Mudam enquanto os observamos.
+
+Reagem às decisões que tomamos.
+
+Continuam a transformar-se depois de decidirmos.
+
+Quem trabalha nestes sistemas conhece bem uma situação aparentemente desconfortável.
+
+Um especialista observa um desenho de rede, um plano de horários, uma operação em tempo real.
+
+Ao fim de poucos minutos afirma:
+
+*— Isto não vai funcionar.*
+
+Quando lhe perguntam porquê, a resposta raramente começa com um gráfico.
+
+Ou com um indicador.
+
+Ou com um número.
+
+E isso pode dar a impressão de que decidiu por intuição.
+
+Mas talvez tenha acontecido exatamente o contrário.
+
+Tal como na oficina, o especialista não percorre mentalmente todos os dados à procura de uma resposta.
+
+Também não procura uma peça milagrosa que explique tudo.
+
+O que construiu, ao longo dos anos, foi uma representação do sistema.
+
+Uma estrutura.
+
+E é essa estrutura que faz com que uma incoerência, uma ausência ou uma oportunidade saltem imediatamente à vista.
+
+É por isso que a experiência é tão difícil de explicar.
+
+Não porque veja informação escondida.
+
+Mas porque reconhece relações que os restantes ainda não organizaram.
+
+É difícil apontar para um único facto e dizer:
+
+***Foi isto.***
+
+Porque a resposta nunca nasceu de um único facto.
+
+Nasceu da forma como todos passaram a encaixar.
+
+Talvez seja essa a diferença entre conhecer um sistema e compreendê-lo.
+
+Conhecer é acumular informação.
+
+Compreender é construir uma representação suficientemente rica para que aquilo que falta se torne evidente.
+
+Talvez seja esse, afinal, o verdadeiro papel de uma boa pergunta.
+
+Não acrescentar informação.
+
+Mas obrigar-nos a reorganizar aquela que já temos.
+
+Porque, quando a estrutura muda, muda também aquilo que conseguimos ver.
+
+**E, de repente, aquilo que parecia invisível passa a ser óbvio.**
+
+------------------------------------------------------------------------
+
+[Pausa Técnica](https://sbat13.github.io/)
+
+{{< include "/_share-links.qmd" >}}
