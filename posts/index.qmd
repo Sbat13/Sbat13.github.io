@@ -16,7 +16,7 @@ listing:
       subtitle: "Subtítulo"
       categories: "Tópicos"
       reading-time: "Tempo de leitura"
-    max-items: 6
+    #max-items: 6
     #categories: unnumbered
     sort-ui: true
     filter-ui: true
