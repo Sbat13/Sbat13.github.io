@@ -1,0 +1,213 @@
+---
+date: "2026-08-10"
+title: "A régua errada"
+subtitle: "É útil?"
+image: images/featured_image.jpg
+lang: pt
+open-graph:
+  description: "Há números que parecem saber mais do que realmente sabem. Medições que se tornam mais consistentes sem se tornarem mais certas. E erros que desaparecem dos dados simplesmente porque alguém se adapta a eles. Talvez o problema não esteja na medição."
+  image: images/featured_image.jpg
+  image-width: 100
+  type: article
+toc: true
+categories: 
+  - "Mobilidade"
+  - "Utilidade"
+  - "Dados"
+format:
+  html: default
+---
+
+# 8:43
+
+::::: {layout="[70,30]"}
+
+<div>
+
+***"Chego às 8:43."***
+
+<br>
+
+O GPS acabou de me dizer.
+
+<br>
+
+Ainda nem comecei a viagem.
+
+<br>
+
+Posso mudar de velocidade, parar, escolher outra estrada.
+
+<br>
+
+O trânsito pode mudar.
+
+<br>
+
+Mesmo assim, 8:43.
+
+<br>
+
+</div>
+
+::: {#second-column}
+
+
+![Photo by <a href="https://unsplash.com/@tinkerman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Immo Wegmann</a> on <a href="https://unsplash.com/photos/yellow-and-black-measuring-tape-1abCQ_3g_UY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](images/featured_image.jpg){.preview-image .lightbox width="300"}
+
+
+      
+:::
+:::::
+
+# 6,43 km
+
+Há qualquer coisa de convincente nos números com muitas casas decimais.
+
+“6,43 km.”
+
+Parece mais rigoroso do que “6,4 km”.
+
+“6,437 km” parece ainda melhor.
+
+“6,43721 km” então, deve ser uma medição extraordinariamente precisa.
+
+Mas o que é que essas casas decimais acrescentaram realmente?
+
+Podemos escrever uma resposta com cinco casas decimais sem saber sequer se a primeira casa decimal está correcta.
+
+Ainda assim, **confiamos** mais nela.
+
+---
+
+# O propósito da medição
+
+Tenho uma régua que dá sempre o resultado errado.
+
+O zero está deslocado dois centímetros.
+
+Uma mesa de 100 cm mede 102.
+
+Outra de 150 mede 152.
+
+Qual é o comprimento das mesas?
+
+Não sei.
+
+Qual é a maior?
+
+Sei.
+
+Quanto maior?
+
+Também sei.
+
+A régua está errada.
+
+Mas para esta pergunta funciona perfeitamente.
+
+---
+
+Agora faço cem medições com essa **mesma régua**.
+
+Os resultados são muito consistentes.
+
+Faço a média.
+
+Calculo o desvio padrão.
+
+Obtenho um intervalo de confiança.
+
+Tenho cada vez mais confiança nos meus dados.
+
+Só há um problema.
+
+A régua continua errada.
+
+Posso conhecer com enorme precisão uma resposta que está sistematicamente afastada da realidade.
+
+---
+
+# O erro que desaparece
+
+Nos transportes encontro uma situação ainda mais estranha.
+
+O tempo de percurso é algo fundamental e portanto constantemente medido e registado.
+
+Quando há atrasos sistemáticos, podemos calcular estatisticamente quanto tempo adicional é necessário para garantir determinado nível de confiança.
+
+Mas imaginemos que o tempo programado é demasiado elevado.
+
+O motorista tem tempo de sobra.
+
+Adapta a velocidade.
+
+Chega a horas.
+
+O que dizem os dados?
+
+Que o tempo de percurso está correcto.
+
+Não há atraso.
+
+Não há desvio.
+
+Não há nada para corrigir.
+
+Mas sabemos que o tempo programado estava errado.
+
+O motorista só conseguiu produzir aquele resultado porque o tempo estava errado.
+
+O erro desapareceu porque alguém se adaptou a ele.
+
+---
+
+E agora já não sei exactamente o que estou a medir.
+
+O tempo que o percurso demora?
+
+Ou o tempo que o percurso demora, quando o motorista sabe qual o horário que deveria cumprir?
+
+---
+
+# O mapa aproximado
+
+Um mapa de uma rede de metro não precisa ser geograficamente exacto.
+
+Pode distorcer distâncias, ângulos e posições.
+
+E ainda assim ser uma representação muito melhor da rede.
+
+Talvez a distância exacta não seja aquilo que queremos saber.
+
+Queremos saber onde mudar de linha.
+
+Que estações estão ligadas.
+
+Qual a sequência.
+
+A representação sacrificou algumas propriedades da realidade para preservar outras.
+
+E foi precisamente isso que a tornou útil.
+
+---
+
+# O que fica de fora?
+
+
+Uma régua pode estar errada e ainda assim permitir uma comparação correcta.
+
+Uma previsão pode ser precisa sem ser exacta.
+
+Uma medição pode ser consistente e continuar sistematicamente errada.
+
+Um mapa pode distorcer a realidade.
+
+**O que fica de fora?**
+
+
+------------------------------------------------------------------------
+
+[Pausa Técnica](https://sbat13.github.io/)
+
+{{< include "/_share-links.qmd" >}}
